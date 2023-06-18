@@ -1,0 +1,1346 @@
+{
+  "of Burning Rage": {
+    "category": "Offensive",
+    "desc": "While Berserking, you deal {#} Fire damage every second to surrounding enemies.",
+    "in_codex": false,
+    "class": "Barbarian"
+  },
+  "Devilish": {
+    "category": "Offensive",
+    "desc": "After generating 100.0 Fury your next Core Skill creates a Dust Devil that deals {#}% damage to enemies behind the target.",
+    "in_codex": false,
+    "class": "Barbarian"
+  },
+  "of Limitless Rage": {
+    "category": "Offensive",
+    "desc": "Each point of Fury you generate while at Maximum Fury grants your next Core Skill x{1/2}% increased damage, up to x{15/30}%.",
+    "in_codex": false,
+    "class": "Barbarian"
+  },
+  "of Berserk Ripping": {
+    "category": "Offensive",
+    "desc": "Whenever you deal direct damage while Berserking, inflict {20/30}% of the Base damage dealt as additional Bleeding damage over 5.0 seconds.",
+    "in_codex": true,
+    "class": "Barbarian"
+  },
+  "Earthquake": {
+    "category": "Offensive",
+    "desc": "Ground Stomp creates an Earthquake damaging enemies for {#} Physical damage over 4 seconds. While standing in Earthquakes, you deal x{5/15}% increased damage.",
+    "in_codex": false,
+    "class": "Barbarian"
+  },
+  "Skullbreaker's": {
+    "category": "Offensive",
+    "desc": "Stunning a Bleeding enemy deals {22/40}% of their total Bleeding amount to them as Physical damage.",
+    "in_codex": false,
+    "class": "Barbarian"
+  },
+  "Weapon Master's": {
+    "category": "Utility",
+    "desc": "Your Weapon Mastery Skills have an additional Charge.\n\nLucky Hit: Damaging an enemy with a Weapon Mastery Skill has up to a {32/50}% chance to Stun them for 2 seconds.",
+    "in_codex": false,
+    "class": "Barbarian"
+  },
+  "Iron Blood": {
+    "category": "Defensive",
+    "desc": "Gain {2/4}% Damage Reduction for each Nearby Bleeding enemy up to {10/20}% maximum.",
+    "in_codex": true,
+    "class": "Barbarian"
+  },
+  "Battle-Mad": {
+    "category": null,
+    "desc": "Gain Berserking for {1/2.5} seconds after swapping weapons 10.0 times.",
+    "in_codex": false,
+    "class": "Barbarian"
+  },
+  "of Echoing Fury": {
+    "category": "Resource",
+    "desc": "Your Shout Skills generate {2/4} Fury per second while active.",
+    "in_codex": true,
+    "class": "Barbarian"
+  },
+  "of the Iron Warrior": {
+    "category": "Defensive",
+    "desc": "Iron Skin grants Unstoppable, and {10/20}% Damage Reduction.",
+    "in_codex": true,
+    "class": "Barbarian"
+  },
+  "of Giant Strides": {
+    "category": "Resource",
+    "desc": "Reduces the Cooldown of Leap by {3/5} seconds per enemy hit, up to a maximum of 9 seconds.",
+    "in_codex": false,
+    "class": "Barbarian"
+  },
+  "Relentless Berserker's": {
+    "category": "Utility",
+    "desc": "Lucky Hit: Damaging an enemy with a Core Skill has up to a {22/40}% chance to extend the duration of Berserking by 1 second. Double this duration if it was a Critical Strike.",
+    "in_codex": true,
+    "class": "Barbarian"
+  },
+  "of Unrelenting Fury": {
+    "category": "Resource",
+    "desc": "Killing an enemy with a Core Skill refunds {10/20}% of its base Fury cost. Can only happen once per Skill cast.",
+    "in_codex": true,
+    "class": "Barbarian"
+  },
+  "of Ancestral Echoes": {
+    "category": "Offensive",
+    "desc": "Lucky Hit: While Call of the Ancients is on your Action Bar, damaging enemies with Leap, Upheaval, or Whirlwind have up to a {40/50}% chance to summon an Ancient to perform the same Skill.",
+    "in_codex": true,
+    "class": "Barbarian"
+  },
+  "of Numbing Wrath": {
+    "category": "Defensive",
+    "desc": "Each point of Fury generated while at Maximum Fury grants {#} Fortify.",
+    "in_codex": true,
+    "class": "Barbarian"
+  },
+  "Brawler's": {
+    "category": "Offensive",
+    "desc": "Enemies damaged by Kick or Charge will explode if they are killed within the next 2.0 seconds, dealing {#}% damage to surrounding enemies.",
+    "in_codex": true,
+    "class": "Barbarian"
+  },
+  "Dust Devil's": {
+    "category": "Offensive",
+    "desc": "Whirlwind leaves behind Dust Devils that deal {#}% damage to surrounding enemies.",
+    "in_codex": false,
+    "class": "Barbarian"
+  },
+  "of Encroaching Wrath": {
+    "category": "Offensive",
+    "desc": "After spending 100.0 Fury, your next Weapon Mastery Skill deals x{82/100}% increased damage.",
+    "in_codex": false,
+    "class": "Barbarian"
+  },
+  "of the Relentless Armsmaster": {
+    "category": "Resource",
+    "desc": "Gain x{20/36}% increased Fury Generation while all damage bonuses from the Walking Arsenal Key Passive are active.",
+    "in_codex": true,
+    "class": "Barbarian"
+  },
+  "of Berserk Fury": {
+    "category": "Resource",
+    "desc": "You gain {3/6} Fury per second while Berserking.",
+    "in_codex": false,
+    "class": "Barbarian"
+  },
+  "Death Wish": {
+    "category": "Offensive",
+    "desc": "Gain {#} Thorns while Berserking.",
+    "in_codex": false,
+    "class": "Barbarian"
+  },
+  "of the Dire Whirlwind": {
+    "category": "Offensive",
+    "desc": "Whirlwind's Critical Strike Chance is increased by +{3/8}% for each second it is channeled, up to +{9/24}%.",
+    "in_codex": true,
+    "class": "Barbarian"
+  },
+  "of Bul-Kathos": {
+    "category": "Defensive",
+    "desc": "Leap creates an Earthquake that deals {#} Physical damage over 4 seconds. While standing in Earthquakes, you gain {5/15}% increased Damage Reduction.",
+    "in_codex": true,
+    "class": "Barbarian"
+  },
+  "Windlasher": {
+    "category": "Offensive",
+    "desc": "Casting Double Swing twice within 1.5 seconds creates a Dust Devil that deals {#}% damage to enemies behind the target.",
+    "in_codex": false,
+    "class": "Barbarian"
+  },
+  "Veteran Brawler's": {
+    "category": "Offensive",
+    "desc": "Each time a Core Skill deals direct damage to an enemy, your next Charge or Leap deals x{15/20}% increased damage, up to x{225/300}%.",
+    "in_codex": true,
+    "class": "Barbarian"
+  },
+  "of Ancestral Force": {
+    "category": "Offensive",
+    "desc": "Hammer of the Ancients quakes outwards, dealing {32/50}% of its damage to enemies.",
+    "in_codex": true,
+    "class": "Barbarian"
+  },
+  "of Grasping Whirlwind": {
+    "category": "Utility",
+    "desc": "Whirlwind periodically Pulls enemies to you.",
+    "in_codex": false,
+    "class": "Barbarian"
+  },
+  "Steadfast Berserker's": {
+    "category": "Defensive",
+    "desc": "Lucky Hit: Up to a 35% chance to gain {#} Fortify whenever you deal direct damage while Berserking.",
+    "in_codex": false,
+    "class": "Barbarian"
+  },
+  "Bold Chieftain's": {
+    "category": "Resource",
+    "desc": "Whenever you cast a Shout Skill, its Cooldown is reduced by {1/1.9} seconds per Nearby enemy, up to a maximum of 6.0 seconds.",
+    "in_codex": false,
+    "class": "Barbarian"
+  },
+  "of Perpetual Stomping": {
+    "category": "Mobility",
+    "desc": "Damaging an enemy with Kick or Ground Stomp resets Leap's Cooldown.",
+    "in_codex": true,
+    "class": "Barbarian"
+  },
+  "of Anemia": {
+    "category": "Utility",
+    "desc": "Lucky Hit: Direct damage against Bleeding enemies has up to a {20/30}% chance to Stun them for 2.0 seconds.",
+    "in_codex": true,
+    "class": "Barbarian"
+  },
+  "Slaking": {
+    "category": "Resource",
+    "desc": "Lucky Hit: You have up to a {30/50}% chance to gain 20.0 Fury when Rend deals direct damage to at least one Bleeding enemy.",
+    "in_codex": true,
+    "class": "Barbarian"
+  },
+  "Earthstriker's": {
+    "category": "Offensive",
+    "desc": "After swapping weapons 10.0 times, your next attack will Overpower and deal x{30/50}% increased Overpower damage.",
+    "in_codex": true,
+    "class": "Barbarian"
+  },
+  "of Tempering Blows": {
+    "category": "Defensive",
+    "desc": "After swapping weapons 6.0 times, gain {#} Fortify.",
+    "in_codex": true,
+    "class": "Barbarian"
+  },
+  "Luckbringer": {
+    "category": "Utility",
+    "desc": "Gain x{12/20}% increased Lucky Hit Chance while all damage bonuses from the Walking Arsenal Key Passive are active.",
+    "in_codex": false,
+    "class": "Barbarian"
+  },
+  "Bear Clan Berserker's": {
+    "category": "Resource",
+    "desc": "Killing an enemy while Berserking has a 40.0% chance to grant {16/32}% increased Cooldown Reduction to your Brawling Skills for 2.0 seconds.",
+    "in_codex": false,
+    "class": "Barbarian"
+  },
+  "Lightning Dancer's": {
+    "category": "Offensive",
+    "desc": "Lightning Storm Critical Strikes spawn 3.0 Dancing Bolts that seek enemies in the area dealing {#} Lightning damage.",
+    "in_codex": false,
+    "class": "Druid"
+  },
+  "Dire Wolf's": {
+    "category": "Offensive",
+    "desc": "Grizzly Rage now Shapeshifts you into a Dire Werewolf. As a Dire Werewolf you gain +{15/25}% Movement Speed instead of Damage Reduction and a {30/50}% Spirit cost reduction bonus. In addition, kills Heal you for 10.0% of your Maximum Life.",
+    "in_codex": false,
+    "class": "Druid"
+  },
+  "of the Stampede": {
+    "category": "Offensive",
+    "desc": "Gain 1 additional Companion. In addition, your Companion Skills deal x{10/20}% bonus damage.",
+    "in_codex": false,
+    "class": "Druid"
+  },
+  "of Metamorphic Stone": {
+    "category": "Offensive",
+    "desc": "Boulder is now a Core Skill and costs 60.0 Spirit to cast dealing {80/100}% of normal damage.",
+    "in_codex": false,
+    "class": "Druid"
+  },
+  "of the Blurred Beast": {
+    "category": "Offensive",
+    "desc": "While dashing, Shred seeks out Nearby Poisoned enemies instantly dealing {60/90}% of the Poisoning damage to them.",
+    "in_codex": false,
+    "class": "Druid"
+  },
+  "of the Unsatiated": {
+    "category": "Resource",
+    "desc": "After killing an enemy with Shred, your next Werewolf Skill generates x{20/30}% more Spirit and deals x{20/30}% increased damage.",
+    "in_codex": true,
+    "class": "Druid"
+  },
+  "Mangled": {
+    "category": "Resource",
+    "desc": "When you are struck as a Werebear you have a {20/30}% chance to gain 1.0 Spirit.",
+    "in_codex": true,
+    "class": "Druid"
+  },
+  "of the Calm Breeze": {
+    "category": "Resource",
+    "desc": "Lucky Hit: Wind Shear has up to a {5/10}% chance to fully restore your Spirit.",
+    "in_codex": true,
+    "class": "Druid"
+  },
+  "of the Tempest": {
+    "category": "Offensive",
+    "desc": "Hurricane damage is increased by x{7/15}% each second while active.",
+    "in_codex": true,
+    "class": "Druid"
+  },
+  "of Quicksand": {
+    "category": "Utility",
+    "desc": "Damage from Earth Skills Slow enemies hit by {25/50}% for 5.0 seconds.",
+    "in_codex": true,
+    "class": "Druid"
+  },
+  "Crashstone": {
+    "category": "Offensive",
+    "desc": "Earth Skills deal x{30/40}% more Critical Strike Damage to Crowd Controlled enemies.",
+    "in_codex": false,
+    "class": "Druid"
+  },
+  "of Mending Stone": {
+    "category": "Defensive",
+    "desc": "The duration of Earthen Bulwark is increased by 6 seconds. In addition, killing an enemy with Earth Skills replenishes {#} of your active Earthen Bulwark's Barrier.",
+    "in_codex": true,
+    "class": "Druid"
+  },
+  "Overcharged": {
+    "category": "Offensive",
+    "desc": "Lucky Hit: Up to a {10/20}% chance when dealing Lightning damage to overload the target for 3.0 seconds, causing any direct damage you deal to them to pulse {#} additional damage to surrounding enemies.",
+    "in_codex": true,
+    "class": "Druid"
+  },
+  "of Natural Balance": {
+    "category": "Offensive",
+    "desc": "Casting a Storm Skill grants your Earth Skills x{30/45}% Critical Strike Damage for 4.0 seconds.\n\nCasting a Earth Skill increases the Critical Strike Chance of Storm Skills by +{8/12}% for 4.0 seconds.",
+    "in_codex": false,
+    "class": "Druid"
+  },
+  "of the Changeling's Debt": {
+    "category": "Offensive",
+    "desc": "Damaging a Poisoned enemy with a Werebear Skill will instantly deal {120/150}% of the Poisoning damage and consume the Poisoning.",
+    "in_codex": true,
+    "class": "Druid"
+  },
+  "Skinwalker's": {
+    "category": "Defensive",
+    "desc": "When you use a Shapeshifting Skill that changes your form, gain {#} Life. If you are at full Life, gain the same amount as Fortify.",
+    "in_codex": true,
+    "class": "Druid"
+  },
+  "Seismic-shift": {
+    "category": "Offensive",
+    "desc": "Earth Spike launches spikes in a line and has a {1.5/2.5} second Cooldown.",
+    "in_codex": false,
+    "class": "Druid"
+  },
+  "of the Trampled Earth": {
+    "category": "Offensive",
+    "desc": "Trample now summons 6.0 Landslide pillars of earth during its duration that deal {70/80}% normal damage. Trample is now also a Nature Magic and Earth Skill.",
+    "in_codex": false,
+    "class": "Druid"
+  },
+  "Stormclaw's": {
+    "category": "Offensive",
+    "desc": "Critical Strikes with Shred deal {20/30}% of the damage dealt as Lightning damage to the target and surrounding enemies.",
+    "in_codex": true,
+    "class": "Druid"
+  },
+  "Balanced": {
+    "category": "Resource",
+    "desc": "Increase your Maximum Spirit by {30/50} and Spirit Generation by x20% while Grizzly Rage is active.",
+    "in_codex": false,
+    "class": "Druid"
+  },
+  "of Cyclonic Force": {
+    "category": "Defensive",
+    "desc": "Cyclone Armor also provides Physical Damage Reduction. In addition, Cyclone Armor will also be applied to all Nearby Allies.",
+    "in_codex": true,
+    "class": "Druid"
+  },
+  "of The Aftershock": {
+    "category": "Offensive",
+    "desc": "Landslide's earth pillars each strike a second time and deal an additional {6/12}% bonus damage per hit.",
+    "in_codex": false,
+    "class": "Druid"
+  },
+  "of the Ursine Horror": {
+    "category": "Offensive",
+    "desc": "Pulverize is now also an Earth Skill. After casting Pulverize, tectonic spikes continue to deal {#}% damage over 2.0 seconds.",
+    "in_codex": true,
+    "class": "Druid"
+  },
+  "of Retaliation": {
+    "category": "Offensive",
+    "desc": "Your Core Skills deal up to x{20/40}% increased damage based on your amount of Fortify.",
+    "in_codex": true,
+    "class": "Druid"
+  },
+  "Shockwave": {
+    "category": "Offensive",
+    "desc": "Pulverize creates a shockwave that travels forward, dealing {60/100}% of its damage to targets in the path.",
+    "in_codex": false,
+    "class": "Druid"
+  },
+  "of the Alpha": {
+    "category": "Offensive",
+    "desc": "Your Wolf Companions are now Werewolf Companions. Werewolf Companions deal +{75/100}% additional damage and can spread Rabies.",
+    "in_codex": false,
+    "class": "Druid"
+  },
+  "Nighthowler's": {
+    "category": "Offensive",
+    "desc": "Blood Howl increases Critical Strike Chance by +{5/10}%. In addition, Blood Howl also affects Nearby Companions and Players for 3.0 seconds.",
+    "in_codex": true,
+    "class": "Druid"
+  },
+  "of Nature's Savagery": {
+    "category": "Offensive",
+    "desc": "Werewolf Skills function as Storm Skills and Werebear Skills function as Earth Skills for the Nature's Fury Key Passive.",
+    "in_codex": false,
+    "class": "Druid"
+  },
+  "Shepherd's": {
+    "category": "Offensive",
+    "desc": "Core Skills deal an additional x{6/8}% damage for each active Companion.",
+    "in_codex": true,
+    "class": "Druid"
+  },
+  "Vigorous": {
+    "category": "Defensive",
+    "desc": "Gain {10/15}% Damage Reduction while Shapeshifted into a Werewolf.",
+    "in_codex": true,
+    "class": "Druid"
+  },
+  "of the Dark Howl": {
+    "category": "Utility",
+    "desc": "Debilitating Roar is now a Werewolf Skill. In addition, Debilitating Roar will Immobilize Poisoned enemies for {2/4} seconds.",
+    "in_codex": false,
+    "class": "Druid"
+  },
+  "of the Rampaging Werebeast": {
+    "category": "Offensive",
+    "desc": "The duration of Grizzly Rage is increased by {1/5} seconds. In addition, Critical Strikes while Grizzly Rage is active increase your Critical Strike Damage by x10% for the duration.",
+    "in_codex": true,
+    "class": "Druid"
+  },
+  "of the Wildrage": {
+    "category": "Offensive",
+    "desc": "Your Companions gain the bonuses from the Bestial Rampage Key Passive.",
+    "in_codex": false,
+    "class": "Druid"
+  },
+  "Ballistic": {
+    "category": "Utility",
+    "desc": "When you have Fortify your Earth Skills gain +2 Ranks.",
+    "in_codex": true,
+    "class": "Druid"
+  },
+  "Stormshifter's": {
+    "category": "Utility",
+    "desc": "While Hurricane is active, gain +2 Ranks to your Shapeshifting Skills.",
+    "in_codex": false,
+    "class": "Druid"
+  },
+  "Stormchaser's": {
+    "category": "Offensive",
+    "desc": "Tornado will seek up to {1/3} targets.",
+    "in_codex": false,
+    "class": "Druid"
+  },
+  "Runeworker's Conduit": {
+    "category": "Offensive",
+    "desc": "Critical Strikes with Storm Skills that you cast charge the air around you for {1/2} seconds causing a Lightning Bolt to periodically hit an enemy in the area for {#} Lightning damage. This duration can be extended by additional Critical Strikes.",
+    "in_codex": false,
+    "class": "Druid"
+  },
+  "Mighty Storm's": {
+    "category": "Offensive",
+    "desc": "The Earthen Might Key Passive also applies to your Storm Skills.",
+    "in_codex": false,
+    "class": "Druid"
+  },
+  "Symbiotic": {
+    "category": "Utility",
+    "desc": "When the Nature's Fury Key Passive triggers a free Skill, your non-Ultimate Cooldowns of the opposite type are reduced by {4/8} seconds.",
+    "in_codex": false,
+    "class": "Druid"
+  },
+  "Earthguard": {
+    "category": "Defensive",
+    "desc": "Gain {15/25}% bonus amount to your next Earthen Bulwark for each enemy you Crowd Control up to a maximum of 100.0%.",
+    "in_codex": false,
+    "class": "Druid"
+  },
+  "Accelerating": {
+    "category": "Offensive",
+    "desc": "Critical Strikes with Core Skills increase your Attack Speed by +{15/25}% for 5.0 seconds.",
+    "in_codex": false,
+    "class": "Generic"
+  },
+  "Exploiter's": {
+    "category": "Utility",
+    "desc": "You have +20.0% increased Crowd Control Duration. While enemies are Unstoppable, you deal x{20/50}% increased damage to them.",
+    "in_codex": false,
+    "class": "Generic"
+  },
+  "Starlight": {
+    "category": "Resource",
+    "desc": "Gain {10/20} of your Primary Resource for every 25.0% of your Life that you Heal.",
+    "in_codex": false,
+    "class": "Generic"
+  },
+  "of Might": {
+    "category": "Defensive",
+    "desc": "Basic Skills grant 20.0% Damage Reduction for {2/6} seconds.",
+    "in_codex": true,
+    "class": "Generic"
+  },
+  "of the Protector": {
+    "category": "Defensive",
+    "desc": "Damaging an Elite enemy grants you a Barrier absorbing up to {#}% damage for 10.0 seconds. This effect can only happen once every 30 seconds.",
+    "in_codex": true,
+    "class": "Generic"
+  },
+  "of Inner Calm": {
+    "category": "Offensive",
+    "desc": "Deal x{5/10}% increased damage for each second you stand still, up to x30.0%.",
+    "in_codex": false,
+    "class": "Generic"
+  },
+  "Wind Striker": {
+    "category": "Mobility",
+    "desc": "Critical Strikes grant +{8/16}% Movement Speed for 1.0 second, up to 6 seconds.",
+    "in_codex": true,
+    "class": "Generic"
+  },
+  "of the Umbral": {
+    "category": "Resource",
+    "desc": "Restore {1/4} of your Primary Resource when you Crowd Control an enemy.",
+    "in_codex": true,
+    "class": "Generic"
+  },
+  "Conceited": {
+    "category": "Offensive",
+    "desc": "Deal x{15/25}% increased damage while you have a Barrier active.",
+    "in_codex": false,
+    "class": "Generic"
+  },
+  "Protecting": {
+    "category": "Defensive",
+    "desc": "When hit while not Healthy, a magical bubble is summoned around you for {3/5} seconds. While standing in the bubble players are Immune. Can only occur once every 90.0 seconds.",
+    "in_codex": false,
+    "class": "Generic"
+  },
+  "of Disobedience": {
+    "category": "Defensive",
+    "desc": "You gain x{0.25/0.5}% increased Armor for 4.0 seconds when you deal any form of damage, stacking up to x{25/50}%.",
+    "in_codex": true,
+    "class": "Generic"
+  },
+  "of Retribution": {
+    "category": "Offensive",
+    "desc": "Distant enemies have a 8.0% chance to be Stunned for 2.0 seconds when they hit you. You deal x{20/40}% increased damage to Stunned enemies.",
+    "in_codex": true,
+    "class": "Generic"
+  },
+  "Rapid": {
+    "category": "Offensive",
+    "desc": "Basic Skills gain +{15/30}% Attack Speed.",
+    "in_codex": true,
+    "class": "Generic"
+  },
+  "Edgemaster's": {
+    "category": "Offensive",
+    "desc": "Skills deal up to x{10/20}% increased damage based on your available Primary Resource when cast, receiving the maximum benefit while you have full Primary Resource.",
+    "in_codex": true,
+    "class": "Generic"
+  },
+  "of the Crowded Sage": {
+    "category": "Defensive",
+    "desc": "You Heal for {#} Life per second for each Close enemy, up to 50 Life per second.",
+    "in_codex": false,
+    "class": "Generic"
+  },
+  "of the Expectant": {
+    "category": "Offensive",
+    "desc": "Attacking enemies with a Basic Skill increases the damage of your next Core Skill cast by x{5/10}%, up to x30.0%.",
+    "in_codex": true,
+    "class": "Generic"
+  },
+  "Ghostwalker": {
+    "category": "Mobility",
+    "desc": "While Unstoppable and for 4.0 seconds after, you gain +{10/25}% increased Movement Speed and can move freely through enemies.",
+    "in_codex": false,
+    "class": "Generic"
+  },
+  "of Shared Misery": {
+    "category": "Utility",
+    "desc": "Lucky Hit: When you hit a Crowd Controlled enemy, there is up to a {30/50}% chance for that Crowd Control effect to spread to another unaffected enemy.",
+    "in_codex": true,
+    "class": "Generic"
+  },
+  "Eluding": {
+    "category": "Utility",
+    "desc": "Becoming Injured while Crowd Controlled grants you Unstoppable for 4.0 seconds. This effect has a {20/40} second Cooldown.",
+    "in_codex": true,
+    "class": "Generic"
+  },
+  "Assimilation": {
+    "category": "Resource",
+    "desc": "You have +8.0% increased Dodge Chance versus enemies affected by Damage Over Time effects. When you Dodge you gain {5/10} of your Primary Resource.",
+    "in_codex": false,
+    "class": "Generic"
+  },
+  "Needleflare": {
+    "category": "Offensive",
+    "desc": "Thorns damage dealt has a {20/40}% chance to deal damage to all enemies around you.",
+    "in_codex": false,
+    "class": "Generic"
+  },
+  "of the Deflecting Barrier": {
+    "category": "Defensive",
+    "desc": "While you have a Barrier active, there is a {7/13}% chance to ignore incoming direct damage from Distant enemies.",
+    "in_codex": true,
+    "class": "Generic"
+  },
+  "Smiting": {
+    "category": "Offensive",
+    "desc": "You have x{10/20}% increased Critical Strike Chance against Injured enemies. While you are Healthy, you gain x{20/40}% increased Crowd Control Duration.",
+    "in_codex": false,
+    "class": "Generic"
+  },
+  "of Ultimate Shadow": {
+    "category": "Offensive",
+    "desc": "Bone Storm and Blood Wave are also Darkness Skills, deal Shadow damage, and gain additional effects:\n• Enemies damaged by Bone Storm take {#} Shadow damage over 2.0 seconds.\n• Blood Wave desecrates the ground it travels over, dealing {#} Shadow damage over 4.0 seconds",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "of Explosive Mist": {
+    "category": "Utility",
+    "desc": "Blood Mist triggers Corpse Explosion on surrounding Corpses. When Blood Mist detonates a Corpse, its Cooldown is reduced by {0.2/0.5} seconds.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "of Frenzied Dead": {
+    "category": "Offensive",
+    "desc": "Each time one of your Summoning Minions damages an enemy, they gain +{10/14}% Attack Speed for 3.0 seconds, up to +{30/42}%.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "Flesh-Rending": {
+    "category": "Resource",
+    "desc": "After Decompose spawns a Corpse, gain {10/20} Essence.",
+    "in_codex": true,
+    "class": "Necromancer"
+  },
+  "Splintering": {
+    "category": "Offensive",
+    "desc": "Bone Spear's primary attack makes enemies hit beyond the first Vulnerable for {1.5/2.5} seconds. Bone Shards from Bone Spear deal {50/100}% bonus damage to Vulnerable enemies and pierce them.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "of Plunging Darkness": {
+    "category": "Offensive",
+    "desc": "Bone Prison spawns a pool of Blight that deals {50/100}% bonus damage over 6.0 seconds.",
+    "in_codex": true,
+    "class": "Necromancer"
+  },
+  "of the Void": {
+    "category": "Utility",
+    "desc": "Blight's defiled area, when spawned, Pulls in enemies around the affected area.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "Rotting": {
+    "category": "Offensive",
+    "desc": "Decompose can chain up to 2.0 additional targets. When Decompose spawns a Corpse, it has a {30/60}% chance to spawn a Corpse under all afflicted targets.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "of Empowering Reaper": {
+    "category": "Offensive",
+    "desc": "Critical Strikes from Sever have a {10/20}% chance to spawn a pool of Blight under the target that deals {20/60}% bonus damage. This effect can only happen once every 3.0 seconds.",
+    "in_codex": true,
+    "class": "Necromancer"
+  },
+  "Coldbringer's": {
+    "category": "Utility",
+    "desc": "Every 10.0 seconds, your Cold Skeletal Mages cast a blizzard that deals {#} Cold damage and continuously Chills enemies for 8% over 6.0 seconds.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "Blood Seeker's": {
+    "category": "Offensive",
+    "desc": "Blood Lance deals x{15/25}% increased damage to its primary target per lanced enemy.",
+    "in_codex": true,
+    "class": "Necromancer"
+  },
+  "of Hungry Blood": {
+    "category": "Offensive",
+    "desc": "When Blood Lance hits an enemy that is already lanced, it has a {10/20}% chance to fire a Blood Lance at a Nearby enemy.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "Viscous": {
+    "category": "Utility",
+    "desc": "Your maximum number of Skeletal Mages is increased by 2.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "Blood-soaked": {
+    "category": "Offensive",
+    "desc": "Blood Mist leaves a trail that lasts for 4.0 seconds and deals {#} Shadow damage per second to enemies who stand in it. Your Movement Speed is no longer reduced while Blood Mist is active.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "of Swelling Curse": {
+    "category": "Offensive",
+    "desc": "Bone Spirit deals increased damage based on distance traveled, up to x{15/25}%.",
+    "in_codex": true,
+    "class": "Necromancer"
+  },
+  "of Bursting Bones": {
+    "category": "Offensive",
+    "desc": "When a segment of Bone Prison is destroyed or expires, it deals {#}% damage in an area around itself.",
+    "in_codex": true,
+    "class": "Necromancer"
+  },
+  "Unyielding Commander's": {
+    "category": "Offensive",
+    "desc": "While Army of the Dead is active, your Minions gain +{70/100}% Attack Speed and take 90% reduced damage.",
+    "in_codex": true,
+    "class": "Necromancer"
+  },
+  "of Shielding Storm": {
+    "category": "Defensive",
+    "desc": "Each time that Bone Storm damages an enemy, gain a Barrier equal to {2/5}% of your Base Life for 10.0 seconds.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "of Grasping Veins": {
+    "category": "Offensive",
+    "desc": "Gain +{10/20}% increased Critical Strike Chance for 6.0 seconds when you cast Corpse Tendrils. You deal x{30/60}% bonus Critical Strike Damage to enemies damaged by Corpse Tendrils.",
+    "in_codex": true,
+    "class": "Necromancer"
+  },
+  "Blood Getter's": {
+    "category": "Utility",
+    "desc": "Your maximum number of Skeletal Warriors is increased by 2.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "of Torment": {
+    "category": "Resource",
+    "desc": "Critical Strikes with Bone Skills increase your Essence Regeneration by x{20/30}% for [Affix.\"Affix Value 0\"] seconds.",
+    "in_codex": true,
+    "class": "Necromancer"
+  },
+  "of Serration": {
+    "category": "Offensive",
+    "desc": "The Ossified Essence Key Passive also increases the Critical Strike Damage of your Bone Skills by +1.0% per Essence above 50.0, up to +{30/40}%.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "Osseous Gale": {
+    "category": "Offensive",
+    "desc": "Bone Storm consumes up to 8 Corpses to increase its duration by up to {4/8} seconds.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "of Exposed Flesh": {
+    "category": "Resource",
+    "desc": "Lucky Hit: Up to a 10.0% chance to generate {30/50} Essence when hitting a Vulnerable enemy with your Bone Skills.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "Blighted": {
+    "category": "Offensive",
+    "desc": "You deal x{50/120}% increased damage for 6.0 seconds after the Shadowblight Key Passive damages enemies 10.0 times.",
+    "in_codex": true,
+    "class": "Necromancer"
+  },
+  "Torturous": {
+    "category": "Utility",
+    "desc": "Enemies afflicted by your Iron Maiden have a {15/25}% chance to be Stunned for 1.0 second when they deal direct damage.",
+    "in_codex": true,
+    "class": "Necromancer"
+  },
+  "of the Damned": {
+    "category": "Offensive",
+    "desc": "You deal x{30/40}% increased Shadow damage to enemies afflicted by both Decrepify and Iron Maiden.",
+    "in_codex": true,
+    "class": "Necromancer"
+  },
+  "of Decay": {
+    "category": "Offensive",
+    "desc": "Each time the Shadowblight Key Passive deals damage to enemies, it increases the next Shadowblight's damage within 10.0 seconds by x{20/40}%, stacking up to 5.0 times.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "Blood-bathed": {
+    "category": "Offensive",
+    "desc": "Blood Surge's nova echoes again after a short delay, dealing x{60/70}% less damage.",
+    "in_codex": true,
+    "class": "Necromancer"
+  },
+  "Tidal": {
+    "category": "Offensive",
+    "desc": "Blood Wave fires two additional waves, each dealing x{50/60}% less damage than the previous.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "Fastblood": {
+    "category": "Resource",
+    "desc": "Blood Orbs reduce your Ultimate Cooldown by {0.5/1} seconds.",
+    "in_codex": true,
+    "class": "Necromancer"
+  },
+  "of Rathma's Chosen": {
+    "category": "Offensive",
+    "desc": "Whenever your Blood Skills Overpower you gain +{20/50}% Attack Speed for 4.0 seconds.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "of Untimely Death": {
+    "category": "Offensive",
+    "desc": "Each percent of your Maximum Life you Heal beyond 100.0% grants you +0.5% bonus Overpower damage on your next Overpowering attack, up to a {20/60}% bonus.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "of Potent Blood": {
+    "category": "Resource",
+    "desc": "While at full Life, Blood Orbs grant {10/20} Essence.",
+    "in_codex": true,
+    "class": "Necromancer"
+  },
+  "Hulking": {
+    "category": "Resource",
+    "desc": "Your Golem has a {1/4}% chance to reduce its active Cooldown by 2.0 seconds and a {0.5/2}% chance to spawn a Corpse each time it damages an enemy with its normal attack.",
+    "in_codex": true,
+    "class": "Necromancer"
+  },
+  "of Hardened Bones": {
+    "category": "Defensive",
+    "desc": "While you have 7.0 or more Minions, your Minions gain {15/20}% increased Damage Reduction.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "Sacrificial": {
+    "category": "Offensive",
+    "desc": "Your Sacrifice bonuses are increased by {15/25}%.",
+    "in_codex": true,
+    "class": "Necromancer"
+  },
+  "Requiem": {
+    "category": "Resource",
+    "desc": "You gain {3/5} Maximum Essence per active Minion.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "of Reanimation": {
+    "category": "Offensive",
+    "desc": "Your Skeletons gain increased damage while alive, up to x{20/30}% after 10.0 seconds.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "Cadaverous": {
+    "category": "Offensive",
+    "desc": "Consuming a Corpse increases the damage of your next Core Skill by x{5/10}%, up to x{25/50}%.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "of the Embalmer": {
+    "category": "Defensive",
+    "desc": "Consuming a Corpse has a {20/30}% chance to spawn a Blood Orb.",
+    "in_codex": false,
+    "class": "Necromancer"
+  },
+  "Repeating": {
+    "category": "Offensive",
+    "desc": "Rapid Fire has a {30/45}% chance to ricochet to another target.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "Snap Frozen": {
+    "category": "Defensive",
+    "desc": "Each Chilled or Frozen enemy you Evade through grants you a Barrier that absorbs {#}% damage for 5.0 seconds, absorbing up to a maximum of {#}% damage.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "of Imitated Imbuement": {
+    "category": "Offensive",
+    "desc": "Your Shadow Clones also mimic the Imbuements applied to your Skills.\nCasting an Imbuement Skill grants your active Shadow Clone x{8/16}% increased damage for 5.0 seconds.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "Enshrouding": {
+    "category": "Defensive",
+    "desc": "Gain a free Dark Shroud shadow every 3.0 seconds when standing still. Each Dark Shroud shadow grants {2/4}% increased Damage Reduction.",
+    "in_codex": true,
+    "class": "Rogue"
+  },
+  "Trickshot": {
+    "category": "Offensive",
+    "desc": "Whenever Penetrating Shot damages an enemy, 2 additional arrows split off to either side. These side arrows deal {10/25}% of Penetrating Shot's Base damage and do not split.",
+    "in_codex": true,
+    "class": "Rogue"
+  },
+  "of Encircling Blades": {
+    "category": "Offensive",
+    "desc": "Flurry damages enemies in a circle around you and deals x{8/15}% increased damage.",
+    "in_codex": true,
+    "class": "Rogue"
+  },
+  "of Volatile Shadows": {
+    "category": "Offensive",
+    "desc": "When a Dark Shroud shadow would be removed you trigger an explosion around yourself that deals {#} Shadow damage.",
+    "in_codex": true,
+    "class": "Rogue"
+  },
+  "Energizing": {
+    "category": "Resource",
+    "desc": "Damaging an Elite enemy with a Basic Skill generates {3/7} Energy.",
+    "in_codex": true,
+    "class": "Rogue"
+  },
+  "of Surprise": {
+    "category": "Offensive",
+    "desc": "When you Evade or Shadow Step, you leave behind a cluster of exploding Stun Grenades that deal {#} total Physical damage and Stun enemies for 0.5 seconds.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "Trickster's": {
+    "category": "Offensive",
+    "desc": "Caltrops also throw a cluster of exploding Stun Grenades that deal {#} total Physical damage and Stun enemies for 0.5 seconds.",
+    "in_codex": true,
+    "class": "Rogue"
+  },
+  "of Unstable Imbuements": {
+    "category": "Offensive",
+    "desc": "When casting an Imbuement Skill you trigger an Imbued explosion around yourself, applying the Imbuement effects and dealing {#}% damage of the same type.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "Bladedancer's": {
+    "category": "Offensive",
+    "desc": "Twisting Blades orbit for a short time after they return to you, dealing {10/15}% of Twisting Blades' return damage per hit. Based on the distance the blades returned, the orbit damage increases up to {20/30}% of the return damage.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "Toxic Alchemist's": {
+    "category": "Offensive",
+    "desc": "Lucky Hit: Damaging a Poisoned enemy with a Shadow Imbued Skill has up to a 75% chance to create a toxic explosion that applies {#} Poisoning damage over 5.0 seconds to the target and surrounding enemies.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "Icy Alchemist's": {
+    "category": "Offensive",
+    "desc": "Lucky Hit: Damaging a Chilled or Frozen enemy with a Shadow Imbued Skill has up to a 75.0% chance to release an explosion that deals {#} Cold damage to the target and surrounding enemies, Chilling them for 15.0%.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "Shadowslicer": {
+    "category": "Offensive",
+    "desc": "When you cast Dash, a Shadow Clone is spawned at your location that also casts Dash, dealing {25/35}% of the Base damage.",
+    "in_codex": true,
+    "class": "Rogue"
+  },
+  "of Arrow Storms": {
+    "category": "Offensive",
+    "desc": "Lucky Hit: Your Marksman Skills have up to a 10.0% chance to create an arrow storm at the enemy's location, dealing {#} Physical damage over 3.0 seconds. You can have up to 5.0 active arrow storms.",
+    "in_codex": true,
+    "class": "Rogue"
+  },
+  "of Bursting Venoms": {
+    "category": "Offensive",
+    "desc": "Lucky Hit: Critical Strikes with Poison Imbued Skills have up to a 10.0% chance to create a toxic pool that deals {#} Poisoning damage over 3.0 seconds to enemies within. While standing in the pool, your Poison Imbuement Skill has no Cooldown and no Charge limit.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "of Branching Volleys": {
+    "category": "Offensive",
+    "desc": "Barrage's arrows have a {15/25}% chance to split into 2 arrows whenever they ricochet.",
+    "in_codex": true,
+    "class": "Rogue"
+  },
+  "Blast-Trapper's": {
+    "category": "Offensive",
+    "desc": "Lucky Hit: Dealing direct damage to enemies affected by your Trap Skills has up to a {30/50}% chance to make them Vulnerable for 3.0 seconds.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "of Explosive Verve": {
+    "category": "Utility",
+    "desc": "Your Grenade Skills count as Trap Skills. Whenever you arm a Trap or drop Grenades, you gain +{10/18}% increased Movement Speed for 3.0 seconds.",
+    "in_codex": true,
+    "class": "Rogue"
+  },
+  "of Uncanny Treachery": {
+    "category": "Defensive",
+    "desc": "Dealing direct damage to a Dazed Enemy with an Agility Skill grants Stealth for 4.0 seconds. Breaking Stealth with an attack grants you {15/45}% Control Impaired Duration Reduction for 4.0 seconds.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "of Cruel Sustenance": {
+    "category": "Defensive",
+    "desc": "Explosions from the Victimize Key Passive Heal you for {#} Life for each enemy damaged, up to a maximum of {#} Life.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "Vengeful": {
+    "category": "Offensive",
+    "desc": "Lucky Hit: Making an enemy Vulnerable has up to a {30/50}% chance to grant +3.0% increased Critical Strike Chance for 3.0 seconds, up to +9%.",
+    "in_codex": true,
+    "class": "Rogue"
+  },
+  "Ravenous": {
+    "category": "Resource",
+    "desc": "Killing a Vulnerable enemy grants you x{50/70}% increased Energy Regeneration for 4.0 seconds.",
+    "in_codex": true,
+    "class": "Rogue"
+  },
+  "Escape Artist's": {
+    "category": "Defensive",
+    "desc": "Upon taking damage from surrounding enemies, you drop a Smoke Grenade and Dodge the next {2/7} attacks within 10.0 seconds. This effect can only occur once every 100.0 seconds.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "of Stolen Vigor": {
+    "category": "Defensive",
+    "desc": "Each stack of the Momentum Key Passive Heals you for {#} Life per second.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "Opportunist's": {
+    "category": "Offensive",
+    "desc": "When you break Stealth with an attack, you drop a cluster of exploding Stun Grenades around your location that deal {#} total Physical damage and Stun enemies for 0.5 seconds.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "of Quickening Fog": {
+    "category": "Utility",
+    "desc": "You automatically drop a Smoke Grenade at the end of Dash. Dash's Cooldown is reduced by {0.25/0.35} seconds for each enemy Dazed this way, up to {0.75/1.05} seconds.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "Cheat's": {
+    "category": "Defensive",
+    "desc": "You take {15/25}% less damage from Crowd Controlled enemies. Whenever a Crowd Controlled enemy deals direct damage to you, gain +15.0% Movement Speed for 2.0 seconds.",
+    "in_codex": true,
+    "class": "Rogue"
+  },
+  "of Siphoned Victuals": {
+    "category": "Defensive",
+    "desc": "Lucky Hit: Damaging a Vulnerable enemy with a Core Skill has up to a {10/20}% chance to drop a Healing Potion.",
+    "in_codex": true,
+    "class": "Rogue"
+  },
+  "of Corruption": {
+    "category": "Offensive",
+    "desc": "Your Imbuement Skill effects have x{20/40}% increased potency against Vulnerable enemies.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "Mangler's": {
+    "category": "Utility",
+    "desc": "Lucky Hit: Dealing direct damage to a Vulnerable enemy has up to a {25/45}% chance to Daze them for 2.0 seconds.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "Umbrous": {
+    "category": "Defensive",
+    "desc": "Lucky Hit: Critical Strikes with Marksman Skills have up to a {30/50}% chance to grant a free Dark Shroud shadow.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "of Noxious Ice": {
+    "category": "Utility",
+    "desc": "Chilled enemies Poisoned by Poison Imbuement will be further Chilled for 20% per second. You deal x{10/25}% additional Poison damage to Frozen enemies.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "Ravager's": {
+    "category": "Mobility",
+    "desc": "Shadow Step has an additional Charge. Killing an enemy with Shadow Step refunds a Charge and increases the damage of Shadow Step by x{1/6}% for 2.0 seconds, up to x{5/30}%.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "of Synergy": {
+    "category": "Offensive",
+    "desc": "Using an Agility Skill reduces the Cooldown of your next Subterfuge Skill by 20%. Using a Subterfuge Skill increases the damage of your next Agility Skill by x{10/30}%.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "of Lethal Dusk": {
+    "category": "Defensive",
+    "desc": "Evading through an enemy infected by Shadow Imbuement grants Stealth for 4.0 seconds. Breaking Stealth with an attack grants you {1/5}% Maximum Life on Kill for 4.0 seconds.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "of Elusive Menace": {
+    "category": "Defensive",
+    "desc": "While you have both bonuses from the Close Quarters Combat Key Passive active, your Dodge Chance increases by +{1/5}% whenever you're hit by a Close enemy. Successfully Dodging resets this bonus.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "Infiltrator's": {
+    "category": "Offensive",
+    "desc": "Poison Trap no longer breaks Stealth and triggers no Cooldown or arm time while you are in Stealth. All Poison Traps activate when you exit Stealth and Poison Trap's Cooldown will be {5/8} seconds per trap placed.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "Frostbitten": {
+    "category": "Utility",
+    "desc": "Chilled enemies hit by your Grenade Skills have a chance equal to double your Critical Strike Chance to be instantly Frozen for 2.0 seconds. You deal x{10/25}% increased Critical Strike Damage against Frozen enemies.",
+    "in_codex": false,
+    "class": "Rogue"
+  },
+  "of Frozen Memories": {
+    "category": "Offensive",
+    "desc": "The Avalanche Key Passive now applies to 1.0 additional casts.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "of Abundant Energy": {
+    "category": "Offensive",
+    "desc": "Crackling Energy has a {20/30}% chance to chain to an additional enemy.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "Shattered": {
+    "category": "Offensive",
+    "desc": "Explosions from the Shatter Key Passive deal x{30/40}% increased damage if enemies die while Frozen.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "of Binding Embers": {
+    "category": "Utility",
+    "desc": "Flame Shield lets you move unhindered through enemies. Enemies you move through while Flame Shield is active are Immobilized for {2/3} seconds.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "Snowguard's": {
+    "category": "Defensive",
+    "desc": "While within your own Blizzard, you take {10/15}% less damage.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "of Three Curses": {
+    "category": "Offensive",
+    "desc": "Meteor deals x{35/50}% increased Critical Strike Damage against Healthy targets.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "of Static Cling": {
+    "category": "Offensive",
+    "desc": "Your casts of Charged Bolts have a {15/25}% chance to be attracted to enemies and and last 300.0% longer.",
+    "in_codex": true,
+    "class": "Sorcerer"
+  },
+  "Frostblitz": {
+    "category": "Defensive",
+    "desc": "Frost Nova gains an additional Charge but the Cooldown per Charge is increased by {30/40}%.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "Charged": {
+    "category": "Mobility",
+    "desc": "Collecting Crackling Energy increases your Movement Speed by +{10/15}% for 4.0 seconds.",
+    "in_codex": true,
+    "class": "Sorcerer"
+  },
+  "of Frozen Orbit": {
+    "category": "Offensive",
+    "desc": "Frozen Orb stays in place after reaching its destination and explodes 2.0 additional times for {20/30}% of its damage.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "Serpentine": {
+    "category": "Offensive",
+    "desc": "You may have 1.0 additional Hydra active, but Hydra's duration is reduced by {20/30}%.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "of Armageddon": {
+    "category": "Offensive",
+    "desc": "A hail of Meteorites falls during Inferno, dealing {#} Fire damage on impact. Your Meteorites Immobilize enemies for 3 seconds.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "of Conflagration": {
+    "category": "Offensive",
+    "desc": "While channeling Incinerate, your Burning damage is increased by x{20/30}%.",
+    "in_codex": true,
+    "class": "Sorcerer"
+  },
+  "of Ancient Flame": {
+    "category": "Offensive",
+    "desc": "While both bonuses from the Esu's Ferocity Key Passive are active, your Attack Speed is increased by {40/50}%.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "of Engulfing Flames": {
+    "category": "Offensive",
+    "desc": "While enemies are affected by more Damage Over Time than their total Life, you deal x{30/40}% increased Burning damage to them.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "Incendiary": {
+    "category": "Resource",
+    "desc": "Lucky Hit: Burning damage has up to a {5/10}% chance to restore 10.0 Mana.",
+    "in_codex": true,
+    "class": "Sorcerer"
+  },
+  "of Singed Extremities": {
+    "category": "Utility",
+    "desc": "After Immobilize wears off, enemies are Slowed by {25/35}% for 4.0 seconds.",
+    "in_codex": true,
+    "class": "Sorcerer"
+  },
+  "Flamewalker's": {
+    "category": "Mobility",
+    "desc": "Coming in contact with your Firewall grants you +{15/25}% Movement Speed for 4.0 seconds.",
+    "in_codex": true,
+    "class": "Sorcerer"
+  },
+  "of Shattered Stars": {
+    "category": "Offensive",
+    "desc": "Meteorites fall around Meteor, dealing {#} Fire damage on impact. Your Meteorites additionally Burn enemies they hit for {#}% damage over 6.0 seconds.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "Glacial": {
+    "category": "Offensive",
+    "desc": "When you cast Blizzard it will periodically spawn exploding Ice Spikes that deal {#}% damage. Your Ice Spikes deal x25% increased damage to Frozen enemies.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "Snowveiled": {
+    "category": "Defensive",
+    "desc": "Casting Ice Armor makes you Unstoppable for {2/3} seconds.",
+    "in_codex": true,
+    "class": "Sorcerer"
+  },
+  "of the Frozen Wake": {
+    "category": "Offensive",
+    "desc": "While Ice Armor is active, you leave behind exploding Ice Spikes that deal {#}% damage. Your Ice Spikes Chill enemies for 10%.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "of Piercing Cold": {
+    "category": "Offensive",
+    "desc": "Ice Shards pierce {4/3} times, dealing {20/25}% less damage per subsequent enemy hit.",
+    "in_codex": true,
+    "class": "Sorcerer"
+  },
+  "Encased": {
+    "category": "Defensive",
+    "desc": "While Deep Freeze is active, you restore {10/20}% of your Maximum Life and Mana per second.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "of Fortune": {
+    "category": "Utility",
+    "desc": "Your Lucky Hit Chance is increased by +{10/20}% while you have a Barrier active.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "of Biting Cold": {
+    "category": "Offensive",
+    "desc": "When you Freeze an enemy there is a {25/35}% chance they become Vulnerable for 3.0 seconds.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "Storm Swell": {
+    "category": "Offensive",
+    "desc": "You deal x{11/20}% increased damage to Vulnerable enemies while you have a Barrier.",
+    "in_codex": true,
+    "class": "Sorcerer"
+  },
+  "of the Frozen Tundra": {
+    "category": "Offensive",
+    "desc": "While Deep Freeze is active, exploding Ice Spikes form in the area, dealing {#} Cold damage. Your Ice Spikes have a 50% increased explosion radius.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "of Overwhelming Currents": {
+    "category": "Offensive",
+    "desc": "Unstable Currents has a {10/20}% chance to cast an additional Shock Skill.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "Recharging": {
+    "category": "Resource",
+    "desc": "Each time Chain Lightning bounces off you, gain {4/6} Mana.",
+    "in_codex": true,
+    "class": "Sorcerer"
+  },
+  "Gravitational": {
+    "category": "Offensive",
+    "desc": "Ball Lightning orbits around you, but its damage is decreased by {10/20}%.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "Mage-Lord's": {
+    "category": "Offensive",
+    "desc": "The Vyr's Mastery Key Passive's Damage Reduction is increased by {20/30}% for each Close enemy, up to {60/90}%.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "of Splintering Energy": {
+    "category": "Offensive",
+    "desc": "Lightning Spear has a {11/20}% chance to spawn an additional Lightning Spear when you cast it.",
+    "in_codex": true,
+    "class": "Sorcerer"
+  },
+  "of the Unbroken Tether": {
+    "category": "Offensive",
+    "desc": "Chain Lightning has a {25/35}% chance to chain 2.0 additional times.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "of the Bounding Conduit": {
+    "category": "Mobility",
+    "desc": "Gain {20/25}% Movement Speed for 3.0 seconds after Teleporting.",
+    "in_codex": true,
+    "class": "Sorcerer"
+  },
+  "Stable": {
+    "category": "Offensive",
+    "desc": "While Unstable Currents is not active, your Shock Skills have a {5/10}% chance to trigger a free cast from it.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "Prodigy's": {
+    "category": "Resource",
+    "desc": "Using a Cooldown restores {15/25} Mana.",
+    "in_codex": true,
+    "class": "Sorcerer"
+  },
+  "of the Unwavering": {
+    "category": "Defensive",
+    "desc": "Taking direct damage has a {2/6}% chance to reset the Cooldown of one of your Defensive Skills.",
+    "in_codex": true,
+    "class": "Sorcerer"
+  },
+  "Elementalist's": {
+    "category": "Offensive",
+    "desc": "Core or Mastery Skills cast at or above 100.0 Mana gain a +{20/40}% increased Critical Strike Chance.",
+    "in_codex": true,
+    "class": "Sorcerer"
+  },
+  "of Concentration": {
+    "category": "Resource",
+    "desc": "Your Mana Regeneration is increased by x{10/20}% if you have not taken damage in the last 3.0 seconds.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "of Control": {
+    "category": "Offensive",
+    "desc": "You deal x{25/35}% more damage to Immobilized, Stunned, or Frozen enemies.",
+    "in_codex": true,
+    "class": "Sorcerer"
+  },
+  "Everliving": {
+    "category": "Defensive",
+    "desc": "You take {20/25}% less damage from Crowd Controlled or Vulnerable enemies.",
+    "in_codex": false,
+    "class": "Sorcerer"
+  },
+  "of Efficiency": {
+    "category": "Resource",
+    "desc": "Casting a Basic Skill reduces the Mana cost of your next Core Skill by {10/20}%.",
+    "in_codex": true,
+    "class": "Sorcerer"
+  }
+}
