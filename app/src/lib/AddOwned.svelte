@@ -32,11 +32,10 @@
     }
   </script>
   
-  <Card>
-    <h3>Add Owned Aspect</h3>
+  <Card class="p-2 md:p-4">
+    <h3 class="text-sm md:text-base">Add Owned Aspect</h3>
     <div class="flex items-center">
-      <Input bind:value={aspectValue} placeholder="Enter value" class="mr-2" />
-      <Button on:click={addOwnedAspect}>Add</Button>
+      <Input bind:value={aspectValue} placeholder="Enter value" class="text-xs md:text-base mr-2" />
+      <Button on:click={addOwnedAspect} class="text-xs md:text-base py-1 px-2">Add</Button>
     </div>
   </Card>
-  
