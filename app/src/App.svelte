@@ -17,6 +17,7 @@
   let selectedClass = '';
   let searchTerm = '';
   let limitToOwned = false;
+  let notInCodex = false;
 
   let ownedAspects: OwnedAspects = {};
 
@@ -82,7 +83,12 @@
     }
   }).filter((aspect) => {
     return aspect.name.toLowerCase().includes(searchTerm.toLowerCase());
-  })  .filter((aspect) => {
+  }).filter((aspect) => {
+    if (notInCodex) {
+      return !aspect.in_codex;
+    }
+    return true;
+  }).filter((aspect) => {
     if (limitToOwned) {
       return !!ownedAspects[aspect.name];
     }
@@ -103,6 +109,10 @@
     <div class="mr-4">
       <Label>Limit to owned</Label>
       <input type="checkbox" bind:checked={limitToOwned} />
+    </div>
+    <div class="mr-4">
+      <Label>Not in codex</Label>
+      <input type="checkbox" bind:checked={notInCodex} />
     </div>
   </div>
 
