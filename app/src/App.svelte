@@ -63,7 +63,7 @@
   });
 
     // Function to handle the event when a new aspect is added
-    function handleAspectAdded() {
+    function handleAspectUpdated() {
       // Update the local data or trigger a refresh
       console.log("handle event")
       const ownedAspectsData = localStorage.getItem('ownedAspects');
@@ -90,26 +90,43 @@
   });
 </script>
 
-<div class="p-8">
-  <Label>Select a class</Label>
-  <Select class="mt-2" items={classes} bind:value={selectedClass} />
+<div class="w-96">
+  <div class="flex">
+    <div class="mr-4">
+      <Label>Select a class</Label>
+      <Select class="mt-2" items={classes} bind:value={selectedClass} />
+    </div>
+    <div class="mr-4">
+      <Label>Search by aspect name</Label>
+      <Input bind:value={searchTerm} placeholder="Enter search term" class="mt-2" />
+    </div>
+    <div class="mr-4">
+      <Label>Limit to owned</Label>
+      <input type="checkbox" bind:checked={limitToOwned} />
+    </div>
+  </div>
 
-  <Label>Search by aspect name</Label>
-  <Input bind:value={searchTerm} placeholder="Enter search term" class="mt-2" />
-
-  <Label>Limit to owned</Label>
-  <input type="checkbox" bind:checked={limitToOwned} />
-
-  <h2>Aspects</h2>
-  {#if aspects.length > 0}
-    {#each filteredAspects as aspect}
-      <Aspect
-        aspect={aspect}
-        ownedList={ownedAspects[aspect.name] || []}
-        on:aspectAdded={handleAspectAdded}
-      />
-    {/each}
-  {:else}
-    <Spinner />
-  {/if}
+  <h2 class="mt-4">Aspects</h2>
+  <div class="aspect-container">
+    {#if aspects.length > 0}
+      {#each filteredAspects as aspect}
+        <Aspect
+          aspect={aspect}
+          ownedList={ownedAspects[aspect.name] || []}
+          on:aspectUpdated={handleAspectUpdated}
+        />
+      {/each}
+    {:else}
+      <Spinner />
+    {/if}
+  </div>
 </div>
+
+
+<style>
+  .aspect-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+</style>

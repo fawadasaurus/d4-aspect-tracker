@@ -7,10 +7,16 @@
     export let ownedList = [];
 </script>
   
-  <Card>
-    <h3>{aspect.name}</h3>
-    <p>{aspect.desc}</p>
+<Card class="w-96">
+    <h3 class="text-2xl font-bold mb-2">{aspect.name}</h3>
+    <p class="text-base mb-4">{aspect.desc}</p>
   
-    <AddOwned aspectName={aspect.name} on:aspectAdded />
-    <ListOwned ownedList={ownedList} />
+    <div class="flex">
+      <div class="w-1/2 pr-4">
+        <ListOwned aspectName={aspect.name} ownedList={ownedList} on:aspectUpdated />
+      </div>
+      <div class="w-1/2">
+        <AddOwned aspectName={aspect.name} on:aspectUpdated />
+      </div>
+    </div>
   </Card>

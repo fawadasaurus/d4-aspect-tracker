@@ -27,7 +27,7 @@
         ownedAspects[aspectName] = [ownedAspect];
       }
       localStorage.setItem('ownedAspects', JSON.stringify(ownedAspects));
-      dispatch('aspectAdded');
+      dispatch('aspectUpdated');
       aspectValue = '';
     }
   </script>
