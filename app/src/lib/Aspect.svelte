@@ -5,11 +5,17 @@
   
     export let aspect;
     export let ownedList = [];
+
+    function formatText(text) {
+      const regex = /({[^}]+})/g;
+      return text.replace(regex, '<strong>$1</strong>');
+    }
 </script>
   
 <Card class="w-96">
-    <h3 class="text-2xl font-bold mb-2">{aspect.name}</h3>
-    <p class="text-base mb-4">{aspect.desc}</p>
+    <h3 class="text-2xl font-bold mb-2">{aspect.name}, {aspect.category}</h3>
+    <p class="text-base mb-4">{@html formatText(aspect.desc)}</p>
+    <p class="text-base mb-4">In codex: {aspect.in_codex ? 'Yes' : 'No'}</p>
   
     <div class="flex">
       <div class="w-1/2 pr-4">
