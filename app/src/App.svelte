@@ -1,6 +1,6 @@
 <script lang='ts'>
   import { onMount } from 'svelte';
-  import { Select, Label, Spinner, Input, Button } from 'flowbite-svelte';
+  import { Select, Label, Spinner, Input, Button, Card, Checkbox } from 'flowbite-svelte';
   import type {  AspectData, OwnedAspects } from './lib/types';
   import Aspect from './lib/Aspect.svelte';
 
@@ -97,24 +97,21 @@
 </script>
 
 <div class="w-96">
-  <div class="flex">
+  <Card class="flex">
+    <h1>
+      D4 Aspect Tracker
+    </h1>
     <div class="mr-4">
-      <Label>Select a class</Label>
-      <Select class="mt-2" items={classes} bind:value={selectedClass} />
+      <Input bind:value={searchTerm} placeholder="Search by aspect name" class="mt-2" />
     </div>
     <div class="mr-4">
-      <Label>Search by aspect name</Label>
-      <Input bind:value={searchTerm} placeholder="Enter search term" class="mt-2" />
+      <Select placeholder="Select a class" class="mt-2" items={classes} bind:value={selectedClass} />
     </div>
-    <div class="mr-4">
-      <Label>Limit to owned</Label>
-      <input type="checkbox" bind:checked={limitToOwned} />
+    <div class="mr-4 mt-2" >
+      <Checkbox bind:checked={limitToOwned}> Limit to owned </Checkbox>
+      <Checkbox bind:checked={notInCodex}> Not in codex </Checkbox>
     </div>
-    <div class="mr-4">
-      <Label>Not in codex</Label>
-      <input type="checkbox" bind:checked={notInCodex} />
-    </div>
-  </div>
+  </Card>
 
   <h2 class="mt-4">Aspects</h2>
   <div class="aspect-container">
