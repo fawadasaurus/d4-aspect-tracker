@@ -113,8 +113,7 @@
     </div>
   </Card>
 
-  <h2 class="mt-4">Aspects</h2>
-  <div class="aspect-container">
+  <div class="aspect-container mt-8">
     {#if aspects.length > 0}
       {#each filteredAspects as aspect}
         <Aspect
