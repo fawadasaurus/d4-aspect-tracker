@@ -25,7 +25,6 @@
 	// 	"Resource": "Ring.",
 	// 	"Mobility": "Amulet [+50%], Boots.",
 
-
   let slots = [
     { value: "", name: "All Slots" },
     { value: "Helmet", name: "Helmet" },
@@ -70,6 +69,22 @@
     }
   }
 
+  function loadOwnedAspectsFromLocalStorage() {
+    const loadedOwnedAspects = {};
+
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key) {
+        const values = localStorage.getItem(key);
+        if (values) {
+          loadedOwnedAspects[key] = JSON.parse(values);
+        }
+      }
+    }
+
+    return loadedOwnedAspects;
+  }
+
   // Load owned aspects from local storage on component mount
   onMount(() => {
     getAspects();
@@ -83,20 +98,30 @@
     //     "time": "2021-05-02T12:00:00"
     //   }]
     // }
+
+    // migrate from old storage to new
     const ownedAspectsData = localStorage.getItem('ownedAspects');
     if (ownedAspectsData) {
       ownedAspects = JSON.parse(ownedAspectsData);
+      if (ownedAspectsData.length > 0) {
+        for (const key in ownedAspects) {
+          const values = ownedAspects[key];
+          localStorage.setItem(key, JSON.stringify(values));
+        }
+        localStorage.removeItem('ownedAspects');
+      }
     }
+
+    // Load owned aspects from local storage
+    ownedAspects = loadOwnedAspectsFromLocalStorage();
+    
   });
 
     // Function to handle the event when a new aspect is added
     function handleAspectUpdated() {
       // Update the local data or trigger a refresh
       console.log("handle event")
-      const ownedAspectsData = localStorage.getItem('ownedAspects');
-      if (ownedAspectsData) {
-        ownedAspects = JSON.parse(ownedAspectsData);
-      }
+      ownedAspects = loadOwnedAspectsFromLocalStorage();
     }
 
   $: filteredAspects = aspects.filter((aspect) => {

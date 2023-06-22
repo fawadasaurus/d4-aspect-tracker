@@ -1,18 +1,18 @@
 <script lang='ts'>
     import { Card, Button, Input } from 'flowbite-svelte';
     import { onMount, createEventDispatcher } from 'svelte';
-    import type { OwnedAspect, OwnedAspects } from './types';
+    import type { OwnedAspect } from './types';
 
     export let aspectName = "";
-    let ownedAspects: OwnedAspects = {};
+    let ownedAspects: OwnedAspect[] = [];
     let aspectValue = "";
 
     const dispatch = createEventDispatcher();
 
     onMount(() => {
-      const ownedAspectsData = localStorage.getItem('ownedAspects');
-      if (ownedAspectsData) {
-        ownedAspects = JSON.parse(ownedAspectsData);
+      const ownedAspectData = localStorage.getItem(aspectName);
+      if (ownedAspectData) {
+        ownedAspects = JSON.parse(ownedAspectData);
       }
     });
   
@@ -21,12 +21,9 @@
         note: aspectValue,
         time: new Date().toLocaleString()
       };
-      if (ownedAspects[aspectName]) {
-        ownedAspects[aspectName].push(ownedAspect);
-      } else {
-        ownedAspects[aspectName] = [ownedAspect];
-      }
-      localStorage.setItem('ownedAspects', JSON.stringify(ownedAspects));
+      ownedAspects.push(ownedAspect)
+
+      localStorage.setItem(aspectName, JSON.stringify(ownedAspects));
       dispatch('aspectUpdated');
       aspectValue = '';
     }
