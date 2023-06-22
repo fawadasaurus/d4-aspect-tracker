@@ -162,7 +162,7 @@
       <Select placeholder="Select item slot" class="mt-2" items={slots} bind:value={selectedSlot} />
     </div>
     <div class="mr-4">
-      <Select placeholder="In Codex" class="mt-2" items={codex} bind:value={selectedCodex} />
+      <Select placeholder="Both In Codex and Not in Codex" class="mt-2" items={codex} bind:value={selectedCodex} />
     </div>
     <div class="mr-4 mt-2" >
       <Checkbox bind:checked={limitToOwned}> Limit to owned </Checkbox>
