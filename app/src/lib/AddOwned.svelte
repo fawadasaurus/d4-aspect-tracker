@@ -5,23 +5,20 @@
 
     export let aspectName = "";
     export let ownedAspects: OwnedAspect[] = [];
-    
+
     let aspectValue = "";
 
     const dispatch = createEventDispatcher();
 
-    onMount(() => {
-      const ownedAspectData = localStorage.getItem(aspectName);
-      if (ownedAspectData) {
-        ownedAspects = JSON.parse(ownedAspectData);
-      }
-    });
-  
     function addOwnedAspect() {
       const ownedAspect: OwnedAspect = {
         note: aspectValue,
         time: new Date().toLocaleString()
       };
+      const ownedAspectData = localStorage.getItem(aspectName);
+      if (ownedAspectData) {
+        ownedAspects = JSON.parse(ownedAspectData);
+      }
       ownedAspects.push(ownedAspect)
 
       localStorage.setItem(aspectName, JSON.stringify(ownedAspects));

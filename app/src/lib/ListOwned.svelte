@@ -7,8 +7,8 @@ export let aspectName = "";
 export let ownedAspects: OwnedAspect[] = [];
 
 const dispatch = createEventDispatcher();
-async function deleteOwnedAspect(index: number) {
-    const ownedAspectData = await localStorage.getItem(aspectName);
+function deleteOwnedAspect(index: number) {
+    const ownedAspectData = localStorage.getItem(aspectName);
     if (ownedAspectData) {
         ownedAspects = JSON.parse(ownedAspectData);
 
