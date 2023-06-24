@@ -29,6 +29,7 @@
     { value: "", name: "All Slots" },
     { value: "Helmet", name: "Helmet" },
     { value: "Chest", name: "Chest" },
+    { value: "Gloves", name: "Gloves" },
     { value: "Pants", name: "Pants" },
     { value: "Boots", name: "Boots" },
     { value: "Weapon", name: "Weapon" },
@@ -154,6 +155,8 @@
       return aspect.category === 'Defensive' || aspect.category === 'Utility';
     } else if (selectedSlot === 'Chest') {
       return aspect.category === 'Defensive' || aspect.category === 'Utility';
+    } else if (selectedSlot === 'Gloves') {
+      return aspect.category === 'Offensive' || aspect.category === 'Utility';
     } else if (selectedSlot === 'Pants') {
       return aspect.category === 'Defensive';
     } else if (selectedSlot === 'Boots') {
