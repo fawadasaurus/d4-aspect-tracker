@@ -199,7 +199,6 @@
       {#each filteredAspects as aspect}
         <Aspect
           aspect={aspect}
-          ownedList={ownedAspects[aspect.name] || []}
           on:aspectUpdated={handleAspectUpdated}
         />
       {/each}

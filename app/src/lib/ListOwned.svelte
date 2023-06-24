@@ -4,9 +4,7 @@ import { createEventDispatcher } from 'svelte';
 import type { OwnedAspect } from './types';
 
 export let aspectName = "";
-export let ownedList = [];
-
-let ownedAspects: OwnedAspect[] = [];
+export let ownedAspects: OwnedAspect[] = [];
 
 const dispatch = createEventDispatcher();
 async function deleteOwnedAspect(index: number) {
@@ -32,7 +30,7 @@ async function deleteOwnedAspect(index: number) {
 <Card class="p-2 md:p-4">
     <h3 class="text-sm md:text-base">Owned Aspects</h3>
     <ul class="text-sm md:text-base">
-      {#each ownedList as ownedAspect, index}
+      {#each ownedAspects as ownedAspect, index}
         <li class="flex items-center">
           <Card class="p-1 md:p-2 flex items-center">
             <p class="text-xs md:text-base font-medium mr-2">{ownedAspect.note}</p>

@@ -2,14 +2,23 @@
     import { Card } from 'flowbite-svelte';
     import AddOwned  from './AddOwned.svelte';
     import ListOwned  from './ListOwned.svelte';
+    import { createEventDispatcher } from 'svelte';
+
+    const dispatch = createEventDispatcher();
   
     export let aspect;
-    export let ownedList = [];
 
     function formatText(text) {
       const regex = /({[^}]+})/g;
       return text.replace(regex, '<strong>$1</strong>');
     }
+
+    function handleAspectUpdated() {
+      ownedAspects = JSON.parse(localStorage.getItem(aspect.name)) || [];
+      dispatch('aspectUpdated');
+    }
+
+    $: ownedAspects = JSON.parse(localStorage.getItem(aspect.name)) || [];
 </script>
   
 <Card class="w-96">
@@ -19,10 +28,10 @@
   
     <div class="flex">
       <div class="w-1/2 pr-4">
-        <ListOwned aspectName={aspect.name} ownedList={ownedList} on:aspectUpdated />
+        <ListOwned aspectName={aspect.name} ownedAspects={ownedAspects} on:aspectUpdated={handleAspectUpdated} />
       </div>
       <div class="w-1/2">
-        <AddOwned aspectName={aspect.name} on:aspectUpdated />
+        <AddOwned aspectName={aspect.name} ownedAspects={ownedAspects} on:aspectUpdated={handleAspectUpdated} />
       </div>
     </div>
   </Card>

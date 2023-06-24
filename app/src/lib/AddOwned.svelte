@@ -4,7 +4,8 @@
     import type { OwnedAspect } from './types';
 
     export let aspectName = "";
-    let ownedAspects: OwnedAspect[] = [];
+    export let ownedAspects: OwnedAspect[] = [];
+    
     let aspectValue = "";
 
     const dispatch = createEventDispatcher();
