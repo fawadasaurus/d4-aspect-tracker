@@ -61,7 +61,7 @@
   },
   "of the Iron Warrior": {
     "category": "Defensive",
-    "desc": "Iron Skin grants Unstoppable, and {10/20}% Damage Reduction.",
+    "desc": "Iron Skin grants Unstoppable, and {15/25}% Damage Reduction.",
     "in_codex": true,
     "class": "Barbarian"
   },
@@ -247,7 +247,7 @@
   },
   "of the Blurred Beast": {
     "category": "Offensive",
-    "desc": "While dashing, Shred seeks out Nearby Poisoned enemies instantly dealing {60/90}% of the Poisoning damage to them.",
+    "desc": "While dashing, Shred seeks out Nearby Poisoned enemies instantly dealing {70/100}% of the Poisoning damage to them.",
     "in_codex": false,
     "class": "Druid"
   },
@@ -259,7 +259,7 @@
   },
   "Mangled": {
     "category": "Resource",
-    "desc": "When you are struck as a Werebear you have a {20/30}% chance to gain 1.0 Spirit.",
+    "desc": "When you are struck as a Werebear you have a {30/40}% chance to gain 1.0 Spirit.",
     "in_codex": true,
     "class": "Druid"
   },
@@ -319,7 +319,7 @@
   },
   "Seismic-shift": {
     "category": "Offensive",
-    "desc": "Earth Spike launches spikes in a line and has a {1.5/2.5} second Cooldown.",
+    "desc": "Earth Spike launches spikes in a line and has a {1/2} second Cooldown.",
     "in_codex": false,
     "class": "Druid"
   },
@@ -619,7 +619,7 @@
   },
   "Flesh-Rending": {
     "category": "Resource",
-    "desc": "After Decompose spawns a Corpse, gain {10/20} Essence.",
+    "desc": "After Decompose spawns a Corpse, gain {20/40} Essence.",
     "in_codex": true,
     "class": "Necromancer"
   },
@@ -781,7 +781,7 @@
   },
   "Fastblood": {
     "category": "Resource",
-    "desc": "Blood Orbs reduce your Ultimate Cooldown by {0.5/1} seconds.",
+    "desc": "Blood Orbs reduce your Ultimate Cooldown by {1/1.5} seconds.",
     "in_codex": true,
     "class": "Necromancer"
   },
@@ -991,7 +991,7 @@
   },
   "Escape Artist's": {
     "category": "Defensive",
-    "desc": "Upon taking damage from surrounding enemies, you drop a Smoke Grenade and Dodge the next {2/7} attacks within 10.0 seconds. This effect can only occur once every 100.0 seconds.",
+    "desc": "Upon taking damage from surrounding enemies, you drop a Smoke Grenade and Dodge the next {2/7} attacks within 10.0 seconds. This effect can only occur once every 45.0 seconds.",
     "in_codex": false,
     "class": "Rogue"
   },
@@ -1039,7 +1039,7 @@
   },
   "Umbrous": {
     "category": "Defensive",
-    "desc": "Lucky Hit: Critical Strikes with Marksman Skills have up to a {30/50}% chance to grant a free Dark Shroud shadow.",
+    "desc": "Lucky Hit: Critical Strikes with Marksman Skills have up to a {40/60}% chance to grant a free Dark Shroud shadow.",
     "in_codex": false,
     "class": "Rogue"
   },
@@ -1093,7 +1093,7 @@
   },
   "of Abundant Energy": {
     "category": "Offensive",
-    "desc": "Crackling Energy has a {20/30}% chance to chain to an additional enemy.",
+    "desc": "Crackling Energy has a {30/40}% chance to chain to an additional enemy.",
     "in_codex": false,
     "class": "Sorcerer"
   },
@@ -1111,7 +1111,7 @@
   },
   "Snowguard's": {
     "category": "Defensive",
-    "desc": "While within your own Blizzard, you take {10/15}% less damage.",
+    "desc": "While within your own Blizzard, you take {20/25}% less damage.",
     "in_codex": false,
     "class": "Sorcerer"
   },
@@ -1177,13 +1177,13 @@
   },
   "Incendiary": {
     "category": "Resource",
-    "desc": "Lucky Hit: Burning damage has up to a {5/10}% chance to restore 10.0 Mana.",
+    "desc": "Lucky Hit: Burning damage has up to a {12/17}% chance to restore 10.0 Mana.",
     "in_codex": true,
     "class": "Sorcerer"
   },
   "of Singed Extremities": {
     "category": "Utility",
-    "desc": "After Immobilize wears off, enemies are Slowed by {25/35}% for 4.0 seconds.",
+    "desc": "After Immobilize wears off, enemies are Slowed by {40/60}% for 4.0 seconds.",
     "in_codex": true,
     "class": "Sorcerer"
   },
@@ -1321,7 +1321,7 @@
   },
   "of Concentration": {
     "category": "Resource",
-    "desc": "Your Mana Regeneration is increased by x{10/20}% if you have not taken damage in the last 3.0 seconds.",
+    "desc": "Your Mana Regeneration is increased by x{20/30}% if you have not taken damage in the last 3.0 seconds.",
     "in_codex": false,
     "class": "Sorcerer"
   },
