@@ -8,14 +8,14 @@
   export let aspect
 
   function formatText(text) {
-    const regex = /(x?){([^}]+)}(%?)/g
+    const regex = /([x+]?){([^}]+)}(%?)/g
     const matches = text.matchAll(regex)
 
     let replace = text
 
     for (const match of matches) {
       const [keyword, x, range, percent] = match
-      const stats = `<span class="text-blue-500">${x}[${range?.replace(
+      const stats = `<span class="text-blue-500 whitespace-nowrap">${x}[${range?.replace(
         '/',
         '-'
       )}]${percent}</span>`
