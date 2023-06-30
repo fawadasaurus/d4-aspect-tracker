@@ -36,6 +36,6 @@
     "tailwind-merge": "^1.13.2"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "**/*": "prettier --plugin-search-dir=. --write --ignore-unknown"
   }
 }
