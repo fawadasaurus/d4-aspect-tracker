@@ -1,28 +1,28 @@
 <script lang='ts'>
-  import { Button } from 'flowbite-svelte'
-  import { createEventDispatcher } from 'svelte'
-  import type { OwnedAspect } from './types'
+  import { Button } from "flowbite-svelte";
+  import { createEventDispatcher } from "svelte";
+  import type { OwnedAspect } from "./types";
 
-  export let aspectName = ''
-  export let ownedAspects: OwnedAspect[] = []
+  export let aspectName = "";
+  export let ownedAspects: OwnedAspect[] = [];
 
-  const dispatch = createEventDispatcher()
+  const dispatch = createEventDispatcher();
 
   function deleteOwnedAspect(index: number) {
-    const ownedAspectData = localStorage.getItem(aspectName)
+    const ownedAspectData = localStorage.getItem(aspectName);
     if (ownedAspectData) {
-      ownedAspects = JSON.parse(ownedAspectData)
+      ownedAspects = JSON.parse(ownedAspectData);
 
-      let ownedAspectList = ownedAspects
-      ownedAspectList.splice(index, 1)
+      let ownedAspectList = ownedAspects;
+      ownedAspectList.splice(index, 1);
 
       if (ownedAspectList.length === 0) {
-        localStorage.removeItem(aspectName)
+        localStorage.removeItem(aspectName);
       } else {
-        localStorage.setItem(aspectName, JSON.stringify(ownedAspects))
+        localStorage.setItem(aspectName, JSON.stringify(ownedAspects));
       }
 
-      dispatch('aspectUpdated')
+      dispatch("aspectUpdated");
     }
   }
 

@@ -1,33 +1,33 @@
 <script lang='ts'>
-  import AddOwned from './AddOwned.svelte'
-  import ListOwned from './ListOwned.svelte'
-  import { createEventDispatcher } from 'svelte'
+  import AddOwned from "./AddOwned.svelte";
+  import ListOwned from "./ListOwned.svelte";
+  import { createEventDispatcher } from "svelte";
 
-  const dispatch = createEventDispatcher()
+  const dispatch = createEventDispatcher();
 
-  export let aspect
+  export let aspect;
 
   function formatText(text) {
-    const regex = /(x?){([^}]+)}(%?)/g
-    const matches = text.matchAll(regex)
+    const regex = /(x?){([^}]+)}(%?)/g;
+    const matches = text.matchAll(regex);
 
-    let replace = text
+    let replace = text;
 
     for (const match of matches) {
-      const [keyword, x, range, percent] = match
-      const stats = `<span class="text-blue-500">${x}[${range?.replace('/', '-')}]${percent}</span>`
-      replace = replace.replace(keyword, stats)
+      const [keyword, x, range, percent] = match;
+      const stats = `<span class="text-blue-500">${x}[${range?.replace("/", "-")}]${percent}</span>`;
+      replace = replace.replace(keyword, stats);
     }
 
-    return replace
+    return replace;
   }
 
   function handleAspectUpdated() {
-    ownedAspects = JSON.parse(localStorage.getItem(aspect.name)) || []
-    dispatch('aspectUpdated')
+    ownedAspects = JSON.parse(localStorage.getItem(aspect.name)) || [];
+    dispatch("aspectUpdated");
   }
 
-  $: ownedAspects = JSON.parse(localStorage.getItem(aspect.name)) || []
+  $: ownedAspects = JSON.parse(localStorage.getItem(aspect.name)) || [];
 </script>
 
 <div class="max-w-sm mb-10">

@@ -1,32 +1,32 @@
 <script lang='ts'>
-  import { Button, Input } from 'flowbite-svelte'
-  import { createEventDispatcher } from 'svelte'
-  import type { OwnedAspect, ItemType } from './types'
+  import { Button, Input } from "flowbite-svelte";
+  import { createEventDispatcher } from "svelte";
+  import type { OwnedAspect, ItemType } from "./types";
 
-  export let aspectName = ''
-  export let ownedAspects: OwnedAspect[] = []
+  export let aspectName = "";
+  export let ownedAspects: OwnedAspect[] = [];
 
-  let aspectValue = ''
+  let aspectValue = "";
 
-  const dispatch = createEventDispatcher()
+  const dispatch = createEventDispatcher();
 
-  function addOwnedAspect(type: ItemType = 'OTHER') {
-    if (aspectValue === '') return
-    const divider = type === 'AMULET' ? 1.5 : type === '2H-WEAPON' ? 2 : 1
+  function addOwnedAspect(type: ItemType = "OTHER") {
+    if (aspectValue === "") return;
+    const divider = type === "AMULET" ? 1.5 : type === "2H-WEAPON" ? 2 : 1;
     const ownedAspect: OwnedAspect = {
       note: String((Math.abs(Number(aspectValue))) / divider),
       time: new Date().toLocaleString()
-    }
-    const ownedAspectData = localStorage.getItem(aspectName)
+    };
+    const ownedAspectData = localStorage.getItem(aspectName);
     if (ownedAspectData) {
-      ownedAspects = JSON.parse(ownedAspectData)
+      ownedAspects = JSON.parse(ownedAspectData);
     }
-    ownedAspects.push(ownedAspect)
-    ownedAspects.sort((a, b) => b.note - a.note)
+    ownedAspects.push(ownedAspect);
+    ownedAspects.sort((a, b) => b.note - a.note);
 
-    localStorage.setItem(aspectName, JSON.stringify(ownedAspects))
-    dispatch('aspectUpdated')
-    aspectValue = ''
+    localStorage.setItem(aspectName, JSON.stringify(ownedAspects));
+    dispatch("aspectUpdated");
+    aspectValue = "";
   }
 </script>
 
