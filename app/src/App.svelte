@@ -123,7 +123,6 @@
   // Function to handle the event when a new aspect is added
   function handleAspectUpdated() {
     // Update the local data or trigger a refresh
-    console.log('handle event')
     ownedAspects = loadOwnedAspectsFromLocalStorage()
   }
 

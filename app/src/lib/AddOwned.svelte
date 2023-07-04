@@ -54,8 +54,6 @@
     ],
   }
 
-  console.log(aspectSlots[aspectCategory])
-
   const dispatch = createEventDispatcher()
 
   function roundDecimals(number) {
