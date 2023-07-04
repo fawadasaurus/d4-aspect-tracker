@@ -33,6 +33,7 @@
     { value: 'Pants', name: 'Pants' },
     { value: 'Boots', name: 'Boots' },
     { value: 'Weapon', name: 'Weapon' },
+    { value: 'Offhand', name: 'Offhand' },
     { value: 'Amulet', name: 'Amulet' },
     { value: 'Ring', name: 'Ring' },
     { value: 'Shield', name: 'Shield' },
@@ -137,6 +138,9 @@
       }
     })
     .filter((aspect) => {
+      if (searchTerm === '') {
+        return true
+      }
       return (
         aspect.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         aspect.desc.toLowerCase().includes(searchTerm.toLowerCase())
@@ -170,7 +174,7 @@
         return aspect.category === 'Defensive'
       } else if (selectedSlot === 'Boots') {
         return aspect.category === 'Utility' || aspect.category === 'Mobility'
-      } else if (selectedSlot === 'Weapon') {
+      } else if (selectedSlot === 'Weapon' || aspect.category === 'Offhand') {
         return aspect.category === 'Offensive'
       } else if (selectedSlot === 'Amulet') {
         return (

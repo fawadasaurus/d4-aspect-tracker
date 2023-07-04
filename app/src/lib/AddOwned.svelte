@@ -107,7 +107,7 @@
     <Select
       placeholder="Select slot"
       class="mt-2"
-      items={aspectSlots[aspectCategory]}
+      items={aspectSlots[aspectCategory] || []}
       bind:value={selectedSlot}
     />
     <Button on:click={addOwnedAspect} class="text-xs md:text-base py-1 px-2"
