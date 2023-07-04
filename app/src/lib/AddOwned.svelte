@@ -4,25 +4,57 @@
   import type { OwnedAspect } from './types'
 
   export let aspectName
+  export let aspectCategory
   export let ownedAspects: OwnedAspect[] = []
 
   let aspectValue = ''
   let selectedSlot = ''
 
-  let slots = [
-    { value: '', name: 'Extracted' },
-    { value: 'Helmet', name: 'Helmet' },
-    { value: 'Chest', name: 'Chest' },
-    { value: 'Gloves', name: 'Gloves' },
-    { value: 'Pants', name: 'Pants' },
-    { value: 'Boots', name: 'Boots' },
-    { value: 'Weapon', name: 'Weapon' },
-    { value: '2H-Weapon', name: '2H Weapon' },
-    { value: 'Amulet', name: 'Amulet' },
-    { value: 'Ring', name: 'Ring' },
-    { value: 'Offhand', name: 'Offhand' },
-    { value: 'Shield', name: 'Shield' },
-  ]
+  // "Defensive": "Amulet [+50%], Chest, Helmet, Pants, Shield.",
+  // 	"Offensive": "Amulet [+50%], Gloves, Ring, 1H Weapon, 2H Weapon [+100%].",
+  // 	"Utility": "Amulet [+50%], Boots, Chest, Gloves, Helmet, Shield.",
+  // 	"Resource": "Ring.",
+  // 	"Mobility": "Amulet [+50%], Boots.",
+
+  let aspectSlots = {
+    Defensive: [
+      { value: '', name: 'Extracted' },
+      { value: 'Amulet', name: 'Amulet' },
+      { value: 'Chest', name: 'Chest' },
+      { value: 'Helmet', name: 'Helmet' },
+      { value: 'Pants', name: 'Pants' },
+      { value: 'Shield', name: 'Shield' },
+    ],
+    Offensive: [
+      { value: '', name: 'Extracted' },
+      { value: 'Amulet', name: 'Amulet' },
+      { value: 'Gloves', name: 'Gloves' },
+      { value: 'Ring', name: 'Ring' },
+      { value: '1H Weapon', name: '1H Weapon' },
+      { value: 'Offhand', name: 'Offhand' },
+      { value: '2H-Weapon', name: '2H-Weapon' },
+    ],
+    Utility: [
+      { value: '', name: 'Extracted' },
+      { value: 'Amulet', name: 'Amulet' },
+      { value: 'Boots', name: 'Boots' },
+      { value: 'Chest', name: 'Chest' },
+      { value: 'Gloves', name: 'Gloves' },
+      { value: 'Helmet', name: 'Helmet' },
+      { value: 'Shield', name: 'Shield' },
+    ],
+    Resource: [
+      { value: '', name: 'Extracted' },
+      { value: 'Ring', name: 'Ring' },
+    ],
+    Mobility: [
+      { value: '', name: 'Extracted' },
+      { value: 'Amulet', name: 'Amulet' },
+      { value: 'Boots', name: 'Boots' },
+    ],
+  }
+
+  console.log(aspectSlots[aspectCategory])
 
   const dispatch = createEventDispatcher()
 
@@ -77,7 +109,7 @@
     <Select
       placeholder="Select slot"
       class="mt-2"
-      items={slots}
+      items={aspectSlots[aspectCategory]}
       bind:value={selectedSlot}
     />
     <Button on:click={addOwnedAspect} class="text-xs md:text-base py-1 px-2"

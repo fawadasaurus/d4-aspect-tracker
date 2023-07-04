@@ -50,6 +50,7 @@
     {/if}
     <AddOwned
       aspectName={aspect.name}
+      aspectCategory={aspect.category}
       {ownedAspects}
       on:aspectUpdated={handleAspectUpdated}
     />
