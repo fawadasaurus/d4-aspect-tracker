@@ -3,7 +3,7 @@
   import { createEventDispatcher } from 'svelte'
   import type { OwnedAspect } from './types'
 
-  export let aspectName = ''
+  export let aspectName
   export let ownedAspects: OwnedAspect[] = []
 
   const dispatch = createEventDispatcher()

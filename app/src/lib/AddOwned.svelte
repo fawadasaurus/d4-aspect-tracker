@@ -3,7 +3,7 @@
   import { createEventDispatcher } from 'svelte'
   import type { OwnedAspect } from './types'
 
-  export let aspectName = ''
+  export let aspectName
   export let ownedAspects: OwnedAspect[] = []
 
   let aspectValue = ''
@@ -21,6 +21,7 @@
     { value: 'Amulet', name: 'Amulet' },
     { value: 'Ring', name: 'Ring' },
     { value: 'Offhand', name: 'Offhand' },
+    { value: 'Shield', name: 'Shield' },
   ]
 
   const dispatch = createEventDispatcher()
@@ -28,8 +29,10 @@
   function roundDecimals(number) {
     if (Number.isInteger(number)) {
       return number.toString() // Return non-decimal value without decimal places
-    } else {
-      return number.toFixed(2) // Round decimal value to 2 decimal places
+    } else if (number < 1) {
+      return number.toFixed(2) // Round decimal value to 4 decimal places
+    } else if (number < 5) {
+      return number.toFixed(1) // Round decimal value to 2 decimal places
     }
   }
 
