@@ -188,6 +188,17 @@
         return aspect.slot === selectedSlot
       }
     })
+    .sort((a, b) => {
+      const nameA = a.name.toLowerCase()
+      const nameB = b.name.toLowerCase()
+      if (nameA < nameB) {
+        return -1 // a should come before b in the sorted order
+      }
+      if (nameA > nameB) {
+        return 1 // a should come after b in the sorted order
+      }
+      return 0 // a and b are equal in terms of sorting
+    })
 </script>
 
 <div class="max-w-md mx-auto p-4">
