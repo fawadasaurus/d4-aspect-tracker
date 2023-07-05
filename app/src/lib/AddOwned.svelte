@@ -94,6 +94,7 @@
     localStorage.setItem(aspectName, JSON.stringify(ownedAspects))
     dispatch('aspectUpdated')
     aspectValue = ''
+    selectedSlot = ''
   }
 </script>
 
