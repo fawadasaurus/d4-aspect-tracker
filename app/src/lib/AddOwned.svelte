@@ -58,12 +58,12 @@
 
   function roundDecimals(number) {
     if (Number.isInteger(number)) {
-      return number.toString() // Return non-decimal value without decimal places
-    } else if (number < 1) {
-      return number.toFixed(2) // Round decimal value to 4 decimal places
-    } else if (number < 5) {
-      return number.toFixed(1) // Round decimal value to 2 decimal places
+      return number.toFixed(0)
     }
+    if (number < 1) {
+      return number.toFixed(2)
+    }
+    return number.toFixed(1)
   }
 
   function addOwnedAspect() {
@@ -111,7 +111,7 @@
       bind:value={selectedSlot}
     />
     <Button on:click={addOwnedAspect} class="text-xs md:text-base py-1 px-2"
-      >Add</Button
-    >
+      >Add
+    </Button>
   </div>
 </Card>
