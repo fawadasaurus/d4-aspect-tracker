@@ -63,7 +63,11 @@
     if (number < 1) {
       return number.toFixed(2)
     }
-    return number.toFixed(1)
+    if (number < 5) {
+      return number.toFixed(1)
+    }
+
+    return number.toFixed(0)
   }
 
   function addOwnedAspect() {
