@@ -98,21 +98,19 @@
   }
 </script>
 
-<div>
-  <div class="flex">
-    <Input
-      type="number"
-      min="0"
-      inputmode="numeric"
-      bind:value={aspectValue}
-      placeholder="Enter value"
-      class="mr-2"
-    />
-    <Select
-      class="mr-2"
-      items={aspectSlots[aspectCategory] || []}
-      bind:value={selectedSlot}
-    />
-    <Button on:click={addOwnedAspect} color="yellow" outline>Add</Button>
-  </div>
+<div class="flex">
+  <Input
+    type="number"
+    min="0"
+    inputmode="numeric"
+    bind:value={aspectValue}
+    placeholder="Enter value"
+    class="mr-2"
+  />
+  <Select
+    class="mr-2"
+    items={aspectSlots[aspectCategory] || []}
+    bind:value={selectedSlot}
+  />
+  <Button on:click={addOwnedAspect} color="yellow" outline>Add</Button>
 </div>
