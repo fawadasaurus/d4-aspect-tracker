@@ -207,38 +207,30 @@
 <div class="max-w-md mx-auto p-4">
   <div class="mb-8">
     <h1 class="text-2xl text-red-600 font-medium mb-4">D4 Aspect Tracker</h1>
-    <div class="mr-4">
-      <Input
-        bind:value={searchTerm}
-        placeholder="Search by name or description"
-        class="mt-2"
-      />
-    </div>
-    <div class="mr-4">
-      <Select
-        placeholder="Select a class"
-        class="mt-2"
-        items={classes}
-        bind:value={selectedClass}
-      />
-    </div>
-    <div class="mr-4">
-      <Select
-        placeholder="Select item slot"
-        class="mt-2"
-        items={slots}
-        bind:value={selectedSlot}
-      />
-    </div>
-    <div class="mr-4">
-      <Select
-        placeholder="Both In Codex and Not in Codex"
-        class="mt-2"
-        items={codex}
-        bind:value={selectedCodex}
-      />
-    </div>
-    <div class="mr-4 mt-2">
+    <Input
+      bind:value={searchTerm}
+      placeholder="Search by name or description"
+      class="mt-2"
+    />
+    <Select
+      placeholder="Select a class"
+      class="mt-2"
+      items={classes}
+      bind:value={selectedClass}
+    />
+    <Select
+      placeholder="Select item slot"
+      class="mt-2"
+      items={slots}
+      bind:value={selectedSlot}
+    />
+    <Select
+      placeholder="Both In Codex and Not in Codex"
+      class="mt-2"
+      items={codex}
+      bind:value={selectedCodex}
+    />
+    <div class="mt-2">
       <Checkbox class="text-base" bind:checked={limitToOwned}>
         Limit to owned</Checkbox
       >

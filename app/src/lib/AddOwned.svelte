@@ -67,6 +67,8 @@
   }
 
   function addOwnedAspect() {
+    if (Number(aspectValue) === 0) return
+
     const divider =
       selectedSlot === 'Amulet' ? 1.5 : selectedSlot === '2H-Weapon' ? 2 : 1
     const actualAspectValue = roundDecimals(
@@ -74,10 +76,12 @@
     )
     let shownValue = ''
     if (actualAspectValue != aspectValue) {
-      shownValue = ' (' + aspectValue + ')'
+      shownValue = '(' + aspectValue + ')'
     }
     const ownedAspect: OwnedAspect = {
-      note: actualAspectValue + ', ' + selectedSlot + shownValue,
+      note: `${actualAspectValue}${
+        selectedSlot ? ', ' : ''
+      }${selectedSlot} ${shownValue}`,
       time: new Date().toLocaleString(),
     }
 
@@ -90,28 +94,23 @@
     localStorage.setItem(aspectName, JSON.stringify(ownedAspects))
     dispatch('aspectUpdated')
     aspectValue = ''
+    selectedSlot = ''
   }
 </script>
 
-<Card class="p-2 md:p-4">
-  <h3 class="text-sm md:text-base">Add Owned Aspect</h3>
-  <div class="flex items-center">
-    <Input
-      type="number"
-      min="0"
-      inputmode="numeric"
-      bind:value={aspectValue}
-      placeholder="Enter value"
-      class="text-xs md:text-base mr-2"
-    />
-    <Select
-      placeholder="Select slot"
-      class="mt-2"
-      items={aspectSlots[aspectCategory] || []}
-      bind:value={selectedSlot}
-    />
-    <Button on:click={addOwnedAspect} class="text-xs md:text-base py-1 px-2"
-      >Add
-    </Button>
-  </div>
-</Card>
+<div class="flex">
+  <Input
+    type="number"
+    min="0"
+    inputmode="numeric"
+    bind:value={aspectValue}
+    placeholder="Enter value"
+    class="mr-2"
+  />
+  <Select
+    class="mr-2"
+    items={aspectSlots[aspectCategory] || []}
+    bind:value={selectedSlot}
+  />
+  <Button on:click={addOwnedAspect} color="yellow" outline>Add</Button>
+</div>
