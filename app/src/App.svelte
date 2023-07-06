@@ -192,8 +192,9 @@
       }
     })
     .sort((a, b) => {
-      const nameA = a.name.toLowerCase()
-      const nameB = b.name.toLowerCase()
+      const regex = /^of the | ^of /i
+      const nameA = a.name.replace(regex, '').toLowerCase()
+      const nameB = b.name.replace(regex, '').toLowerCase()
       if (nameA < nameB) {
         return -1 // a should come before b in the sorted order
       }
