@@ -33,12 +33,12 @@
   $: ownedAspects = JSON.parse(localStorage.getItem(aspect.name)) || []
 </script>
 
-<div class="mb-10">
+<div class="mb-8 flex flex-col">
   <h3 class="text-lg font-medium mb-2 text-amber-600">
     {aspect.name}, {aspect.category}
     {aspect.in_codex ? '(Codex)' : ''}
   </h3>
-  <p class="text-base mb-4">{@html formatText(aspect.desc)}</p>
+  <p class="text-base mb-4 flex-grow">{@html formatText(aspect.desc)}</p>
 
   {#if ownedAspects.length > 0}
     <ListOwned

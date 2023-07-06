@@ -234,8 +234,8 @@
   </p>
 </Banner>
 
-<div class="max-w-md mx-auto p-4">
-  <div class="mb-8">
+<div class="p-4">
+  <div class="mb-8 md:max-w-md mx-auto">
     <h1 class="text-2xl text-red-600 font-medium mb-4">D4 Aspect Tracker</h1>
     <Input
       bind:value={searchTerm}
@@ -267,7 +267,9 @@
     </div>
   </div>
 
-  <div>
+  <div
+    class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+  >
     {#if aspects.length > 0}
       {#each filteredAspects as aspect}
         <Aspect {aspect} on:aspectUpdated={handleAspectUpdated} />
