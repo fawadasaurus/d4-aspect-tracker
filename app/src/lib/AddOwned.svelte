@@ -106,7 +106,7 @@
   <Input
     type="number"
     min="0"
-    inputmode="numeric"
+    inputmode="decimal"
     bind:value={aspectValue}
     placeholder="Enter value"
     class="mr-2"
