@@ -235,7 +235,7 @@
 </Banner>
 
 <div class="p-4">
-  <div class="mb-8">
+  <div class="mb-8 max-w-md mx-auto">
     <h1 class="text-2xl text-red-600 font-medium mb-4">D4 Aspect Tracker</h1>
     <Input
       bind:value={searchTerm}
