@@ -51,10 +51,13 @@ for k, v in db_file_json
     pclass = k
     for aspect, aspect_details in v["Legendary"]
         category = category_map[aspect_details["category"].to_s]
-        desc = aspect_details["desc"]
         name = aspect_details["name"]
+        name_localized = aspect_details["name_localized"]
+        name_localized["enUS"] = name
+        desc_localized = aspect_details["desc_localized"]
+        desc_localized["enUS"] = aspect_details["desc"]
         in_codex = codex_aspects.include?(name)
-        db_aspects[name] = {"category" => category, "desc" => desc, "in_codex" => in_codex, "class" => pclass}
+        db_aspects[name] = {"category" => category, "in_codex" => in_codex, "class" => pclass, "name_localized" => name_localized, "desc_localized" => desc_localized}
     end
 end
 

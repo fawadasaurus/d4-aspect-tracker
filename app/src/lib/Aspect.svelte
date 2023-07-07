@@ -6,6 +6,7 @@
   const dispatch = createEventDispatcher()
 
   export let aspect
+  export let selectedLocalization
 
   function formatText(text) {
     const regex = /([x+]?){([^}]+)}(%?)/g
@@ -30,15 +31,27 @@
     dispatch('aspectUpdated')
   }
 
+  function standardize(name) {
+    //check the first character of the name.  if it is a [
+    //then it is a localized name and we need to remove the [ and ]
+    if (name[0] === '[') {
+      return name.split(']')[1].split('[')[0]
+    } else {
+      return name
+    }
+  }
+
   $: ownedAspects = JSON.parse(localStorage.getItem(aspect.name)) || []
 </script>
 
 <div class="mb-8 flex flex-col">
   <h3 class="text-lg font-medium mb-2 text-amber-600">
-    {aspect.name}, {aspect.category}
+    {standardize(aspect.name_localized[selectedLocalization])}, {aspect.category}
     {aspect.in_codex ? '(Codex)' : ''}
   </h3>
-  <p class="text-base mb-4 flex-grow">{@html formatText(aspect.desc)}</p>
+  <p class="text-base mb-4 flex-grow">
+    {@html formatText(aspect.desc_localized[selectedLocalization])}
+  </p>
 
   {#if ownedAspects.length > 0}
     <ListOwned

@@ -46,6 +46,33 @@
   let limitToOwned = false
   let selectedCodex = ''
 
+  let browserLanguage = navigator.language.replace('-', '')
+
+  let selectedLocalization = localStorage.getItem('localization')
+
+  let supportedLocalizations = [
+    { value: 'enUS', name: 'USA' },
+    { value: 'deDE', name: 'Germany' },
+    { value: 'esES', name: 'Spain' },
+    { value: 'esMX', name: 'Mexico' },
+    { value: 'frFR', name: 'France' },
+    { value: 'itIT', name: 'Italy' },
+    { value: 'jaJP', name: 'Japan' },
+    { value: 'koKR', name: 'Korea' },
+    { value: 'plPL', name: 'Poland' },
+    { value: 'ptBR', name: 'Brazil' },
+    { value: 'trTR', name: 'Turkey' },
+    { value: 'zhTW', name: 'Taiwan' },
+  ]
+  if (selectedLocalization == null || selectedLocalization == '') {
+    if (supportedLocalizations.find((x) => x.value === browserLanguage)) {
+      selectedLocalization = browserLanguage
+    } else {
+      selectedLocalization = 'enUS'
+    }
+    localStorage.setItem('localization', selectedLocalization)
+  }
+
   let ownedAspects: OwnedAspects = {}
 
   async function getAspects() {
@@ -74,12 +101,19 @@
     }
   }
 
+  function setLocalization() {
+    localStorage.setItem('localization', selectedLocalization)
+  }
+
   function loadOwnedAspectsFromLocalStorage() {
     const loadedOwnedAspects = {}
 
     for (let i = 0; i < localStorage.length; i++) {
       const key = localStorage.key(i)
       if (key) {
+        if (key === 'localization') {
+          continue
+        }
         const values = localStorage.getItem(key)
         if (values) {
           loadedOwnedAspects[key] = JSON.parse(values)
@@ -141,9 +175,26 @@
       if (searchTerm === '') {
         return true
       }
+      let hyphenateLocalization = ''
+      if (selectedLocalization.length === 4) {
+        const languageCode = selectedLocalization.substring(0, 2)
+        const countryCode = selectedLocalization.substring(2)
+        hyphenateLocalization = languageCode + '-' + countryCode
+      } else hyphenateLocalization = 'en-US'
+
+      const lowercaseInput = searchTerm
+        .normalize('NFC')
+        .toLocaleLowerCase(hyphenateLocalization)
+      const lowercaseName = aspect.name_localized[selectedLocalization]
+        .normalize('NFC')
+        .toLocaleLowerCase(hyphenateLocalization)
+      const lowercaseDesc = aspect.desc_localized[selectedLocalization]
+        .normalize('NFC')
+        .toLocaleLowerCase(hyphenateLocalization)
       return (
-        aspect.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        aspect.desc.toLowerCase().includes(searchTerm.toLowerCase())
+        //check if search term is value that can be lowercased
+        lowercaseName.includes(lowercaseInput) ||
+        lowercaseDesc.includes(lowercaseInput)
       )
     })
     .filter((aspect) => {
@@ -205,7 +256,7 @@
     })
 </script>
 
-<Banner id="bottom-banner" position="relative">
+<Banner id="top-banner" position="relative">
   <p
     class="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400"
   >
@@ -237,7 +288,18 @@
 
 <div class="p-4">
   <div class="mb-8 md:max-w-md mx-auto">
-    <h1 class="text-2xl text-red-600 font-medium mb-4">D4 Aspect Tracker</h1>
+    <div class="grid grid-cols-2 gap-4">
+      <h1 class="flex flex-col text-2xl text-red-600 font-medium mb-4">
+        D4 Aspect Tracker
+      </h1>
+      <Select
+        placeholder="Language"
+        class="flex flex-col"
+        items={supportedLocalizations}
+        bind:value={selectedLocalization}
+        on:change={setLocalization}
+      />
+    </div>
     <Input
       bind:value={searchTerm}
       placeholder="Search by name or description"
@@ -273,7 +335,11 @@
   >
     {#if aspects.length > 0}
       {#each filteredAspects as aspect}
-        <Aspect {aspect} on:aspectUpdated={handleAspectUpdated} />
+        <Aspect
+          {aspect}
+          {selectedLocalization}
+          on:aspectUpdated={handleAspectUpdated}
+        />
       {/each}
     {:else}
       <Spinner />

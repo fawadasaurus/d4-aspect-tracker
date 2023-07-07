@@ -10,9 +10,10 @@ export interface OwnedAspects {
 export interface AspectData {
   [name: string]: {
     category: string
-    desc: string
     in_codex: boolean
     class: string
+    name_localized: { [lang: string]: string }
+    desc_localized: { [lang: string]: string }
   }
 }
 
