@@ -24,6 +24,7 @@
   // 	"Utility": "Amulet [+50%], Boots, Chest, Gloves, Helmet, Shield.",
   // 	"Resource": "Ring.",
   // 	"Mobility": "Amulet [+50%], Boots.",
+  //  "Weapon": "1H Weapon, 2H Weapon [+100%].",
 
   let slots = [
     { value: '', name: 'All Slots' },
@@ -226,7 +227,7 @@
       } else if (selectedSlot === 'Boots') {
         return aspect.category === 'Utility' || aspect.category === 'Mobility'
       } else if (selectedSlot === 'Weapon' || aspect.category === 'Offhand') {
-        return aspect.category === 'Offensive'
+        return aspect.category === 'Offensive' || aspect.cateogry === 'Weapon'
       } else if (selectedSlot === 'Amulet') {
         return (
           aspect.category === 'Defensive' ||

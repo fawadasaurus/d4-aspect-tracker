@@ -296,7 +296,7 @@
     }
   },
   "Battle-Mad": {
-    "category": null,
+    "category": "Weapon",
     "in_codex": false,
     "class": "Barbarian",
     "name_localized": {

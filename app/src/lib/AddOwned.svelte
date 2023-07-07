@@ -15,6 +15,7 @@
   // 	"Utility": "Amulet [+50%], Boots, Chest, Gloves, Helmet, Shield.",
   // 	"Resource": "Ring.",
   // 	"Mobility": "Amulet [+50%], Boots.",
+  //  "Weapon": "1H Weapon, 2H Weapon [+100%].",
 
   let aspectSlots = {
     Defensive: [
@@ -30,7 +31,7 @@
       { value: 'Amulet', name: 'Amulet' },
       { value: 'Gloves', name: 'Gloves' },
       { value: 'Ring', name: 'Ring' },
-      { value: '1H Weapon', name: '1H Weapon' },
+      { value: '1H-Weapon', name: '1H-Weapon' },
       { value: 'Offhand', name: 'Offhand' },
       { value: '2H-Weapon', name: '2H-Weapon' },
     ],
@@ -51,6 +52,11 @@
       { value: '', name: 'Extracted' },
       { value: 'Amulet', name: 'Amulet' },
       { value: 'Boots', name: 'Boots' },
+    ],
+    Weapon: [
+      { value: '', name: 'Extracted' },
+      { value: '1H-Weapon', name: '1H Weapon' },
+      { value: '2H-Weapon', name: '2H Weapon' },
     ],
   }
 

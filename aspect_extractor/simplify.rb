@@ -40,7 +40,7 @@ for pclass in codex_file_json.keys
     end
 end
 
-category_map = {"0" => "Offensive", "1" => "Defensive", "2" => "Utility", "3" => "Resource", "4" => "Mobility"}
+category_map = {"0" => "Offensive", "1" => "Defensive", "2" => "Utility", "3" => "Resource", "4" => "Mobility", "5" => "Weapon"}
 
 db_file_str = File.read(input_db_file)
 db_file_json = JSON.parse(db_file_str)
