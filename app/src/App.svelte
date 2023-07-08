@@ -1,6 +1,14 @@
 <script lang="ts">
   import { onMount } from 'svelte'
-  import { Banner, Select, Spinner, Input, Checkbox } from 'flowbite-svelte'
+  import {
+    Banner,
+    Select,
+    Spinner,
+    Input,
+    Checkbox,
+    CloseButton,
+    Search,
+  } from 'flowbite-svelte'
   import type { AspectData, OwnedAspects } from './lib/types'
   import Aspect from './lib/Aspect.svelte'
 
@@ -255,6 +263,10 @@
       }
       return 0 // a and b are equal in terms of sorting
     })
+
+  function clearSearch(e: MouseEvent): void {
+    searchTerm = ''
+  }
 </script>
 
 <Banner id="top-banner" position="relative">
@@ -305,7 +317,9 @@
       bind:value={searchTerm}
       placeholder="Search by name or description"
       class="mt-2"
-    />
+    >
+      <CloseButton slot="right" on:click={clearSearch} />
+    </Input>
     <Select
       placeholder="Select a class"
       class="mt-2"
