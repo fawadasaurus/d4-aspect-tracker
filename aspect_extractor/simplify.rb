@@ -30,7 +30,7 @@ for pclass in codex_file_json.keys
                 name = aspect.gsub("Aspect","").strip
             end
             in_codex = false
-            if aspect_details["dungeon"] != ""
+            if aspect_details["region"] != ""
                 in_codex = true
             end
             if in_codex == true

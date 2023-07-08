@@ -778,7 +778,7 @@
   },
   "Death Wish": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Barbarian",
     "name_localized": {
       "deDE": "[ms]Todessehnsüchtiger[fs]Todessehnsüchtige[ns]Todessehnsüchtiges[p]Todessehnsüchtige[c]Todeswunsch-",
@@ -1740,7 +1740,7 @@
   },
   "Crashstone": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Druid",
     "name_localized": {
       "deDE": "[ms]Steinbrüchiger[fs]Steinbrüchige[ns]Steinbrüchiges[p]Steinbrüchige[c]Bruchstein-",
@@ -2628,7 +2628,7 @@
   },
   "Stormshifter's": {
     "category": "Utility",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Druid",
     "name_localized": {
       "deDE": "[ms]Sturmwandelnder[fs]Sturmwandelnde[ns]Sturmwandelndes[p]Sturmwandelnde[c]Sturmwandler-",
@@ -3035,7 +3035,7 @@
   },
   "of Inner Calm": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Generic",
     "name_localized": {
       "deDE": "der inneren Ruhe",
@@ -3442,7 +3442,7 @@
   },
   "Ghostwalker": {
     "category": "Mobility",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Generic",
     "name_localized": {
       "deDE": "[ms]Geistwandelnder[fs]Geistwandelnde[ns]Geistwandelndes[p]Geistwandelnde[c]Geistwandler-",
@@ -3590,7 +3590,7 @@
   },
   "Needleflare": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Generic",
     "name_localized": {
       "deDE": "[ms]Nadelfeuriger[fs]Nadelfeurige[ns]Nadelfeuriges[p]Nadelfeurige[c]Nadelfeuer-",
@@ -3849,7 +3849,7 @@
   },
   "Splintering": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Necromancer",
     "name_localized": {
       "deDE": "[ms]Splitternder[fs]Splitternde[ns]Splitterndes[p]Splitternde[c]Splitter-",
@@ -5070,7 +5070,7 @@
   },
   "Requiem": {
     "category": "Resource",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Necromancer",
     "name_localized": {
       "deDE": "[ms]Bestattender[fs]Bestattende[ns]Bestattendes[p]Bestattende[c]Requiem-",
@@ -5107,7 +5107,7 @@
   },
   "of Reanimation": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Necromancer",
     "name_localized": {
       "deDE": "der Reanimation",
@@ -5588,7 +5588,7 @@
   },
   "of Unstable Imbuements": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Rogue",
     "name_localized": {
       "deDE": "der instabilen Infusionen",
@@ -5625,7 +5625,7 @@
   },
   "Bladedancer's": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Rogue",
     "name_localized": {
       "deDE": "[ms]Klingentanzender[fs]Klingentanzende[ns]Klingentanzendes[p]Klingentanzende[c]Klingentänzer-",
@@ -5884,7 +5884,7 @@
   },
   "Blast-Trapper's": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Rogue",
     "name_localized": {
       "deDE": "[ms]Sprengfallenstellender[fs]Sprengfallenstellende[ns]Sprengfallenstellendes[p]Sprengfallenstellende[c]Sprengfallensteller-",
@@ -5958,7 +5958,7 @@
   },
   "of Uncanny Treachery": {
     "category": "Defensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Rogue",
     "name_localized": {
       "deDE": "des unheimlichen Verrats",
@@ -6180,7 +6180,7 @@
   },
   "Opportunist's": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Rogue",
     "name_localized": {
       "deDE": "[ms]Opportuner[fs]Opportune[ns]Opportunes[p]Opportune[c]Opportunisten-",
@@ -6328,7 +6328,7 @@
   },
   "of Corruption": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Rogue",
     "name_localized": {
       "deDE": "der Verderbnis",
@@ -6846,7 +6846,7 @@
   },
   "Snowguard's": {
     "category": "Defensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Sorcerer",
     "name_localized": {
       "deDE": "[ms]Schneewachender[fs]Schneewachende[ns]Schneewachendes[p]Schneewachende[c]Schneewächter-",
@@ -6883,7 +6883,7 @@
   },
   "of Three Curses": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Sorcerer",
     "name_localized": {
       "deDE": "der drei Flüche",
@@ -7623,7 +7623,7 @@
   },
   "of Biting Cold": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Sorcerer",
     "name_localized": {
       "deDE": "der beißenden Kälte",
