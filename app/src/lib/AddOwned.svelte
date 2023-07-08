@@ -9,6 +9,7 @@
 
   let aspectValue = ''
   let selectedSlot = ''
+  let aspectSecondValue = ''
 
   // "Defensive": "Amulet [+50%], Chest, Helmet, Pants, Shield.",
   // 	"Offensive": "Amulet [+50%], Gloves, Ring, 1H Weapon, 2H Weapon [+100%].",
@@ -16,6 +17,18 @@
   // 	"Resource": "Ring.",
   // 	"Mobility": "Amulet [+50%], Boots.",
   //  "Weapon": "1H Weapon, 2H Weapon [+100%].",
+
+  let doubleEntryAspects = [
+    'of Ultimate Shadow',
+    'Earthquake',
+    'of Bul-Kathos',
+    'of Cruel Sustenance',
+    'of Shattered Stars',
+    'of Ultimate Shadow',
+    'Overcharged',
+    'Snap Frozen',
+    "Runeworker's Conduit",
+  ]
 
   let aspectSlots = {
     Defensive: [
@@ -84,14 +97,30 @@
     const actualAspectValue = roundDecimals(
       Math.abs(Number(aspectValue)) / divider
     )
+
+    let actualSecondValue = ''
+
+    if (aspectSecondValue != '') {
+      actualSecondValue = roundDecimals(
+        Math.abs(Number(aspectSecondValue)) / divider
+      )
+      actualSecondValue = '/' + actualSecondValue
+    }
+
     let shownValue = ''
     if (actualAspectValue != aspectValue) {
-      shownValue = '(' + aspectValue + ')'
+      shownValue = ': (' + aspectValue + ')'
     }
+
+    let shownSecondValue = ''
+    if (actualSecondValue != aspectSecondValue) {
+      shownSecondValue = '/(' + aspectSecondValue + ')'
+    }
+
     const ownedAspect: OwnedAspect = {
-      note: `${actualAspectValue}${
+      note: `${actualAspectValue}${actualSecondValue}${
         selectedSlot ? ', ' : ''
-      }${selectedSlot} ${shownValue}`,
+      }${selectedSlot}${shownValue}${shownSecondValue}`,
       time: new Date().toLocaleString(),
     }
 
@@ -104,6 +133,7 @@
     localStorage.setItem(aspectName, JSON.stringify(ownedAspects))
     dispatch('aspectUpdated')
     aspectValue = ''
+    aspectSecondValue = ''
     selectedSlot = ''
   }
 </script>
@@ -117,6 +147,16 @@
     placeholder="Enter value"
     class="mr-2"
   />
+  {#if doubleEntryAspects.includes(aspectName)}
+    <Input
+      type="number"
+      min="0"
+      inputmode="decimal"
+      bind:value={aspectSecondValue}
+      placeholder="Enter value"
+      class="mr-2"
+    />
+  {/if}
   <Select
     class="mr-2"
     items={aspectSlots[aspectCategory] || []}
