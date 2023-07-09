@@ -298,6 +298,17 @@
 
     ownedAspects = loadOwnedAspectsFromLocalStorage()
   }
+
+  function copyText(e: MouseEvent): void {
+    navigator.clipboard
+      .writeText(ownedAspectsString)
+      .then(() => {
+        alert('Copied Aspects to Clipboard')
+      })
+      .catch(() => {
+        alert('something went wrong')
+      })
+  }
 </script>
 
 <Banner id="top-banner" position="relative">
@@ -343,6 +354,7 @@
 
 <Modal title="Export Aspects" bind:open={exportModal} autoclose>
   <Textarea bind:value={ownedAspectsString} readonly />
+  <Button on:click={copyText}>Copy</Button>
 </Modal>
 
 <Hamburger --color="grey" bind:open />
