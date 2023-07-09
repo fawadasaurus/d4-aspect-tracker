@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte'
+  import { Hamburger } from 'svelte-hamburgers'
   import {
     Banner,
     Select,
@@ -7,7 +8,9 @@
     Input,
     Checkbox,
     CloseButton,
-    Search,
+    Modal,
+    Textarea,
+    Button,
   } from 'flowbite-svelte'
   import type { AspectData, OwnedAspects } from './lib/types'
   import Aspect from './lib/Aspect.svelte'
@@ -54,10 +57,17 @@
   let selectedSlot = ''
   let limitToOwned = false
   let selectedCodex = ''
+  let ownedAspectsString = ''
+  let importAspectsString = ''
+
+  let importModal = false
+  let exportModal = false
+
+  let open
 
   let browserLanguage = navigator.language.replace('-', '')
 
-  let selectedLocalization = localStorage.getItem('localization')
+  let selectedLocalization = localStorage.getItem('_localization')
 
   let supportedLocalizations = [
     { value: 'enUS', name: 'USA' },
@@ -79,7 +89,7 @@
     } else {
       selectedLocalization = 'enUS'
     }
-    localStorage.setItem('localization', selectedLocalization)
+    localStorage.setItem('_localization', selectedLocalization)
   }
 
   let ownedAspects: OwnedAspects = {}
@@ -111,7 +121,7 @@
   }
 
   function setLocalization() {
-    localStorage.setItem('localization', selectedLocalization)
+    localStorage.setItem('_localization', selectedLocalization)
   }
 
   function loadOwnedAspectsFromLocalStorage() {
@@ -120,7 +130,7 @@
     for (let i = 0; i < localStorage.length; i++) {
       const key = localStorage.key(i)
       if (key) {
-        if (key === 'localization') {
+        if (key.indexOf('_') === 0) {
           continue
         }
         const values = localStorage.getItem(key)
@@ -147,7 +157,7 @@
     //   }]
     // }
 
-    // migrate from old storage to new
+    // migrate from old storage to new ********Delete on July 20th 2023.
     const ownedAspectsData = localStorage.getItem('ownedAspects')
     if (ownedAspectsData) {
       ownedAspects = JSON.parse(ownedAspectsData)
@@ -159,6 +169,7 @@
         localStorage.removeItem('ownedAspects')
       }
     }
+    localStorage.removeItem('localization')
 
     // Load owned aspects from local storage
     ownedAspects = loadOwnedAspectsFromLocalStorage()
@@ -168,6 +179,10 @@
   function handleAspectUpdated() {
     // Update the local data or trigger a refresh
     ownedAspects = loadOwnedAspectsFromLocalStorage()
+  }
+
+  $: if (exportModal) {
+    ownedAspectsString = JSON.stringify(loadOwnedAspectsFromLocalStorage())
   }
 
   $: filteredAspects = aspects
@@ -267,6 +282,22 @@
   function clearSearch(e: MouseEvent): void {
     searchTerm = ''
   }
+
+  function importData(e: MouseEvent): void {
+    let importAspects: OwnedAspects = {}
+    importAspects = JSON.parse(importAspectsString)
+
+    // Save owned aspects to local storage
+    for (const key in importAspects) {
+      const values = importAspects[key]
+      localStorage.setItem(key, JSON.stringify(values))
+    }
+
+    importAspectsString = ''
+    importModal = false
+
+    ownedAspects = loadOwnedAspectsFromLocalStorage()
+  }
 </script>
 
 <Banner id="top-banner" position="relative">
@@ -290,14 +321,35 @@
       <span class="sr-only">Issues and Comments</span>
     </span>
     <span
-      >This project is open source. Please report issues and comments on our <a
-        href="https://github.com/fawadasaurus/d4-aspect-tracker/issues"
-        class="inline font-medium text-primary-600 underline dark:text-primary-500 underline-offset-2 decoration-600 dark:decoration-500 decoration-solid hover:no-underline"
-        >Github</a
-      ></span
+      ><p>
+        This project is open source. Please report issues and comments on our <a
+          href="https://github.com/fawadasaurus/d4-aspect-tracker/issues"
+          class="inline font-medium text-primary-600 underline dark:text-primary-500 underline-offset-2 decoration-600 dark:decoration-500 decoration-solid hover:no-underline"
+          >Github</a
+        >
+      </p>
+      <p>
+        Export and Import functionality added! Click menu on the left.
+      </p></span
     >
+    <span />
   </p>
 </Banner>
+
+<Modal title="Import Aspects" bind:open={importModal} autoclose>
+  <Textarea bind:value={importAspectsString} />
+  <Button on:click={importData}>Import</Button>
+</Modal>
+
+<Modal title="Export Aspects" bind:open={exportModal} autoclose>
+  <Textarea bind:value={ownedAspectsString} readonly />
+</Modal>
+
+<Hamburger --color="grey" bind:open />
+{#if open}
+  <Button on:click={() => (exportModal = true)}>Export</Button>
+  <Button on:click={() => (importModal = true)}>Import</Button>
+{/if}
 
 <div class="p-4">
   <div class="mb-8 md:max-w-md mx-auto">
