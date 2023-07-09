@@ -30,6 +30,18 @@
     "Runeworker's Conduit",
   ]
 
+  let inverseAspects = [
+    'Seismic-shift',
+    'Blood-bathed',
+    'Eluding',
+    'Frostblitz',
+    'Gravitational',
+    "Infiltrator's",
+    'of Piercing Cold',
+    'Serpentine',
+    'Tidal',
+  ]
+
   let aspectSlots = {
     Defensive: [
       { value: '', name: 'Extracted' },
@@ -92,8 +104,13 @@
   function addOwnedAspect() {
     if (Number(aspectValue) === 0) return
 
-    const divider =
+    let divider =
       selectedSlot === 'Amulet' ? 1.5 : selectedSlot === '2H-Weapon' ? 2 : 1
+
+    if (inverseAspects.includes(aspectName)) {
+      divider = 1 / divider
+    }
+
     const actualAspectValue = roundDecimals(
       Math.abs(Number(aspectValue)) / divider
     )
