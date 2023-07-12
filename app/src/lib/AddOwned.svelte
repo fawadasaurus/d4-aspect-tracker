@@ -28,6 +28,7 @@
     'Overcharged',
     'Snap Frozen',
     "Runeworker's Conduit",
+    'of Piercing Cold',
   ]
 
   let inverseAspects = [
@@ -104,22 +105,27 @@
   function addOwnedAspect() {
     if (Number(aspectValue) === 0) return
 
-    let divider =
+    let divider1 =
+      selectedSlot === 'Amulet' ? 1.5 : selectedSlot === '2H-Weapon' ? 2 : 1
+    let divider2 =
       selectedSlot === 'Amulet' ? 1.5 : selectedSlot === '2H-Weapon' ? 2 : 1
 
     if (inverseAspects.includes(aspectName)) {
-      divider = 1 / divider
+      if (aspectName != 'of Piercing Cold') {
+        divider1 = 1 / divider1
+      }
+      divider2 = 1 / divider2
     }
 
     const actualAspectValue = roundDecimals(
-      Math.abs(Number(aspectValue)) / divider
+      Math.abs(Number(aspectValue)) / divider1
     )
 
     let actualSecondValue = ''
 
     if (aspectSecondValue != '') {
       actualSecondValue = roundDecimals(
-        Math.abs(Number(aspectSecondValue)) / divider
+        Math.abs(Number(aspectSecondValue)) / divider2
       )
       actualSecondValue = '/' + actualSecondValue
     }
