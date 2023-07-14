@@ -137,7 +137,9 @@
         if (values) {
           try {
             loadedOwnedAspects[key] = JSON.parse(values)
-          } catch {}
+          } catch (error) {
+            console.error(`Error parsing data for key "${key}":`, error)
+          }
         }
       }
     }
