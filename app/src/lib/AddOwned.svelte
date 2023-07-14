@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Card, Button, Input, Select } from 'flowbite-svelte'
+  import { Button, Input, Select } from 'flowbite-svelte'
   import { createEventDispatcher } from 'svelte'
   import type { OwnedAspect } from './types'
 
@@ -10,6 +10,7 @@
   let aspectValue = ''
   let selectedSlot = ''
   let aspectSecondValue = ''
+  let noteValue = ''
 
   // "Defensive": "Amulet [+50%], Chest, Helmet, Pants, Shield.",
   // 	"Offensive": "Amulet [+50%], Gloves, Ring, 1H Weapon, 2H Weapon [+100%].",
@@ -145,6 +146,7 @@
         selectedSlot ? ', ' : ''
       }${selectedSlot}${shownValue}${shownSecondValue}`,
       time: new Date().toLocaleString(),
+      note_long: noteValue,
     }
 
     const ownedAspectData = localStorage.getItem(aspectName)
@@ -158,10 +160,15 @@
     aspectValue = ''
     aspectSecondValue = ''
     selectedSlot = ''
+    noteValue = ''
   }
 </script>
 
-<div class="flex">
+<div
+  class="mt-2 grid {doubleEntryAspects.includes(aspectName)
+    ? 'grid grid-cols-3'
+    : 'grid grid-cols-2'} gap-2"
+>
   <Input
     type="number"
     min="0"
@@ -185,5 +192,8 @@
     items={aspectSlots[aspectCategory] || []}
     bind:value={selectedSlot}
   />
+</div>
+<div class="mt-2 grid grid-cols-2 gap-2">
+  <Input class="mr-10" bind:value={noteValue} placeholder="Enter notes" />
   <Button on:click={addOwnedAspect} color="yellow" outline>Add</Button>
 </div>

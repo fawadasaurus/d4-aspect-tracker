@@ -27,13 +27,21 @@
   }
 </script>
 
-<div class="mb-4">
+<div class="mb-4 grid grid-cols-2 gap-4">
   {#each ownedAspects as ownedAspect, index}
-    <div class="p-1 md:p-2 inline-flex items-center">
-      <div class="text-2xl mr-2">{ownedAspect.note}</div>
-      <Button color="red" outline on:click={() => deleteOwnedAspect(index)}
-        >X</Button
+    <div class="p-1 md:p-2 flex items-center">
+      <div class="flex flex-col">
+        <div class="text-xl mb-2">{ownedAspect.note}</div>
+        <div class="text-sm">{ownedAspect.note_long || ''}</div>
+      </div>
+      <Button
+        class="ml-auto"
+        color="red"
+        outline
+        on:click={() => deleteOwnedAspect(index)}
       >
+        X
+      </Button>
     </div>
   {/each}
 </div>

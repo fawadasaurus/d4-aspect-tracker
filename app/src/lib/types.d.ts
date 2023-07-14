@@ -1,6 +1,7 @@
 export interface OwnedAspect {
   note: string
   time: string
+  note_long?: string
 }
 
 export interface OwnedAspects {
