@@ -135,7 +135,9 @@
         }
         const values = localStorage.getItem(key)
         if (values) {
-          loadedOwnedAspects[key] = JSON.parse(values)
+          try {
+            loadedOwnedAspects[key] = JSON.parse(values)
+          } catch {}
         }
       }
     }
