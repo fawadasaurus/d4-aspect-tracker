@@ -161,6 +161,9 @@
     aspectSecondValue = ''
     selectedSlot = ''
     noteValue = ''
+    gtag('event', 'Add Aspect', {
+      event_name: 'add_aspect',
+    })
   }
 </script>
 
