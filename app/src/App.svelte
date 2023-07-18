@@ -365,22 +365,18 @@
 {#if open}
   <Button on:click={() => (exportModal = true)}>Export</Button>
   <Button on:click={() => (importModal = true)}>Import</Button>
+  <Select
+    placeholder="Language"
+    class="w-40 inline-block"
+    items={supportedLocalizations}
+    bind:value={selectedLocalization}
+    on:change={setLocalization}
+  />
 {/if}
 
 <div class="p-4">
   <div class="mb-8 md:max-w-md mx-auto">
-    <div class="grid grid-cols-2 gap-4">
-      <h1 class="flex flex-col text-2xl text-red-600 font-medium mb-4">
-        D4 Aspect Tracker
-      </h1>
-      <Select
-        placeholder="Language"
-        class="flex flex-col"
-        items={supportedLocalizations}
-        bind:value={selectedLocalization}
-        on:change={setLocalization}
-      />
-    </div>
+    <h1 class="text-2xl text-red-600 font-medium mb-4">D4 Aspect Tracker</h1>
     <Input
       bind:value={searchTerm}
       placeholder="Search by name or description"
@@ -408,8 +404,8 @@
     />
     <div class="mt-2">
       <Checkbox class="text-base" bind:checked={limitToOwned}>
-        Limit to owned</Checkbox
-      >
+        Limit to owned
+      </Checkbox>
     </div>
   </div>
 
