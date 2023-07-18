@@ -325,14 +325,15 @@
     </span>
     <span
       ><p>
-        This project is open source. Please report issues and comments on our <a
+        This project is open source. Please report issues, feedback, and
+        comments on our <a
           href="https://github.com/fawadasaurus/d4-aspect-tracker/issues"
           class="inline font-medium text-primary-600 underline dark:text-primary-500 underline-offset-2 decoration-600 dark:decoration-500 decoration-solid hover:no-underline"
           >Github</a
         >
       </p>
       <p>
-        Export and Import functionality added! Click menu on the left.
+        Localization (language) and Export/Import in the menu on the top left.
       </p></span
     >
     <span />
