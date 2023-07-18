@@ -161,18 +161,6 @@
     //   }]
     // }
 
-    // migrate from old storage to new ********Delete on July 20th 2023.
-    const ownedAspectsData = localStorage.getItem('ownedAspects')
-    if (ownedAspectsData) {
-      ownedAspects = JSON.parse(ownedAspectsData)
-      if (ownedAspectsData.length > 0) {
-        for (const key in ownedAspects) {
-          const values = ownedAspects[key]
-          localStorage.setItem(key, JSON.stringify(values))
-        }
-        localStorage.removeItem('ownedAspects')
-      }
-    }
     localStorage.removeItem('localization')
 
     // Load owned aspects from local storage

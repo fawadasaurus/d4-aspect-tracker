@@ -42,6 +42,7 @@
     'of Piercing Cold',
     'Serpentine',
     'Tidal',
+    'Searing Wards',
   ]
 
   let aspectSlots = {
@@ -137,7 +138,7 @@
     }
 
     let shownSecondValue = ''
-    if (actualSecondValue != aspectSecondValue) {
+    if (actualSecondValue.replace('/', '') != aspectSecondValue) {
       shownSecondValue = '/(' + aspectSecondValue + ')'
     }
 
