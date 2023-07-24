@@ -259,7 +259,7 @@
       }
     })
     .sort((a, b) => {
-      const regex = /^of the | ^of /i
+      const regex = /^of the |^of /i
       const nameA = a.name.replace(regex, '').toLowerCase()
       const nameB = b.name.replace(regex, '').toLowerCase()
       if (nameA < nameB) {
