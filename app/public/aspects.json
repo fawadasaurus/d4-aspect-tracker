@@ -149,7 +149,7 @@
   },
   "Earthquake": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Barbarian",
     "name_localized": {
       "deDE": "[ms]Bebender[fs]Bebende[ns]Bebendes[p]Bebende[c]Erdbeben-",
@@ -667,7 +667,7 @@
   },
   "of Encroaching Wrath": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Barbarian",
     "name_localized": {
       "deDE": "des einnehmenden Zorns",
@@ -1370,7 +1370,7 @@
   },
   "of Ancestral Charge": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Barbarian",
     "name_localized": {
       "deDE": "des Ahnensturms",
@@ -1407,7 +1407,7 @@
   },
   "Lightning Dancer's": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Druid",
     "name_localized": {
       "deDE": "[ms]Blitztänzelnder[fs]Blitztänzelnde[ns]Blitztänzelndes[p]Blitztänzelnde[c]Blitztänzer-",
@@ -1444,7 +1444,7 @@
   },
   "Dire Wolf's": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Druid",
     "name_localized": {
       "deDE": "[ms]Wölfischer[fs]Wölfische[ns]Wölfisches[p]Wölfische[c]Todeswolf-",
@@ -2295,7 +2295,7 @@
   },
   "Shockwave": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Druid",
     "name_localized": {
       "deDE": "[ms]Überrollender[fs]Überrollende[ns]Überrollendes[p]Überrollende[c]Schockwellen-",
@@ -2887,7 +2887,7 @@
   },
   "Subterranean": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Druid",
     "name_localized": {
       "deDE": "[ms]Unterirdischer[fs]Unterirdische[ns]Unterirdisches[p]Unterirdische[c]Unterirdischen-",
@@ -3775,7 +3775,7 @@
   },
   "Craven": {
     "category": "Mobility",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Generic",
     "name_localized": {
       "deDE": "[ms]Feiger[fs]Feige[ns]Feiges[p]Feige[c]Feigheits-",
@@ -3812,7 +3812,7 @@
   },
   "of Audacity": {
     "category": "Utility",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Generic",
     "name_localized": {
       "deDE": "der Kühnheit",
@@ -4182,7 +4182,7 @@
   },
   "Coldbringer's": {
     "category": "Utility",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Necromancer",
     "name_localized": {
       "deDE": "[ms]Kältebringender[fs]Kältebringende[ns]Kältebringendes[p]Kältebringende[c]Kältebringer-",
@@ -4700,7 +4700,7 @@
   },
   "of Exposed Flesh": {
     "category": "Resource",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Necromancer",
     "name_localized": {
       "deDE": "des entblößten Fleisches",
@@ -4848,7 +4848,7 @@
   },
   "of Decay": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Necromancer",
     "name_localized": {
       "deDE": "des Verfalls",
@@ -5366,7 +5366,7 @@
   },
   "of Gore Quills": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Necromancer",
     "name_localized": {
       "deDE": "der Blutstacheln",
@@ -5699,7 +5699,7 @@
   },
   "of Surprise": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Rogue",
     "name_localized": {
       "deDE": "der Überraschung",
@@ -6587,7 +6587,7 @@
   },
   "Umbrous": {
     "category": "Defensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Rogue",
     "name_localized": {
       "deDE": "[ms]Schattiger[fs]Schattige[ns]Schattiges[p]Schattige[c]Schatten-",
@@ -6883,7 +6883,7 @@
   },
   "of Pestilent Points": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Rogue",
     "name_localized": {
       "deDE": "der Seuchenspitzen",
@@ -7253,7 +7253,7 @@
   },
   "of Frozen Orbit": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Sorcerer",
     "name_localized": {
       "deDE": "des gefrorenen Orbits",
@@ -8030,7 +8030,7 @@
   },
   "Gravitational": {
     "category": "Offensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Sorcerer",
     "name_localized": {
       "deDE": "[ms]Gravitativer[fs]Gravitative[ns]Gravitatives[p]Gravitative[c]Gravitations-",
@@ -8511,7 +8511,7 @@
   },
   "of Searing Wards": {
     "category": "Defensive",
-    "in_codex": false,
+    "in_codex": true,
     "class": "Sorcerer",
     "name_localized": {
       "deDE": "des sengenden Schutzes",

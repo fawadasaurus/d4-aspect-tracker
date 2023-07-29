@@ -18,6 +18,30 @@ codex_file_str.gsub!(/export { codexValues };/, '')
 codex_file_json = JSON.parse(codex_file_str)
 
 codex_aspects = []
+seasonal_aspects = [
+    'Umbrous',
+    "Bold Chieftan's",
+    "of Frozen Orbit",
+    "Lightning Dancer's",
+    "Dire Wolf's",
+    "of Pestilent Points",
+    "Earthquake",
+    "of Searing Wards",
+    "of Encroaching Wrath",
+    "of Ancestral Charge",
+    "Shockwave",
+    "of Exposed Flesh",
+    "of Gore Quills",
+    "Coldbringer's",
+    "Gravitational",
+    "of Unbroken Tether",
+    "of Surprise",
+    "of Imitated Imbument",
+    "of Decay",
+    "Subterranean",
+    "Craven",
+    "of Audacity"
+]
 
 for pclass in codex_file_json.keys
     if pclass == "Categories"
@@ -31,6 +55,9 @@ for pclass in codex_file_json.keys
             end
             in_codex = false
             if aspect_details["region"] != ""
+                in_codex = true
+            end
+            if seasonal_aspects.include? name
                 in_codex = true
             end
             if in_codex == true
