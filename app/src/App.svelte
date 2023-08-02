@@ -59,6 +59,7 @@
   let selectedCodex = ''
   let ownedAspectsString = ''
   let importAspectsString = ''
+  let searchContainer
 
   let importModal = false
   let exportModal = false
@@ -273,6 +274,7 @@
 
   function clearSearch(e: MouseEvent): void {
     searchTerm = ''
+    searchContainer?.querySelector('input')?.focus()
   }
 
   function importData(e: MouseEvent): void {
@@ -356,7 +358,7 @@
   <Button on:click={() => (importModal = true)}>Import</Button>
   <Select
     placeholder="Language"
-    class="w-40 inline-block"
+    class="w-max inline-block"
     items={supportedLocalizations}
     bind:value={selectedLocalization}
     on:change={setLocalization}
@@ -366,13 +368,15 @@
 <div class="p-4">
   <div class="mb-8 md:max-w-md mx-auto">
     <h1 class="text-2xl text-red-600 font-medium mb-4">D4 Aspect Tracker</h1>
-    <Input
-      bind:value={searchTerm}
-      placeholder="Search by name or description"
-      class="mt-2"
-    >
-      <CloseButton slot="right" on:click={clearSearch} />
-    </Input>
+    <div bind:this={searchContainer}>
+      <Input
+        bind:value={searchTerm}
+        placeholder="Search by name or description"
+        class="mt-2"
+      >
+        <CloseButton slot="right" on:click={clearSearch} />
+      </Input>
+    </div>
     <Select
       placeholder="Select a class"
       class="mt-2"
