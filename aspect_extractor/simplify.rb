@@ -80,7 +80,9 @@ for k, v in db_file_json
         begin
             category = category_map[aspect_details["category"].to_s]
             name = aspect_details["name"]
-            name_localized = aspect_details["name_localized"]
+            #if error then name_localized is empty hash
+            name_localized = aspect_details["name_localized"] 
+            name_localized = {} if name_localized.nil?
             name_localized["enUS"] = name
             desc_localized = aspect_details["desc_localized"]
             desc_localized["enUS"] = aspect_details["desc"]
