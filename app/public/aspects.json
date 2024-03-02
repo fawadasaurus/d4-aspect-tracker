@@ -234,7 +234,7 @@
       "jaJP": "武器の達人の",
       "koKR": "무기 전문가의",
       "plPL": "[ms]Fechmistrzowski[fs]Fechmistrzowska[ns]Fechmistrzowskie[p]Fechmistrzowskie",
-      "ptBR": "de Mestre em Armas",
+      "ptBR": "[fs]Mestre em Armas[ms]Mestre em Armas[fp]Mestres em Armas[mp]Mestres em Armas",
       "ruRU": "[ms]высококлассный[fs]высококлассная[ns]высококлассное[p]высококлассные",
       "trTR": "[n2]Silah Ustasının",
       "zhCN": "武器大师的",
@@ -598,7 +598,7 @@
     "name_localized": {
       "deDE": "[ms]Raufender[fs]Raufende[ns]Raufendes[p]Raufende[c]Raufbold-",
       "esES": "de luchador",
-      "esMX": "del Combatiente",
+      "esMX": "de Combatiente",
       "frFR": "du combat",
       "itIT": "del Rissoso",
       "jaJP": "喧嘩屋が携えし",
@@ -931,7 +931,7 @@
     "name_localized": {
       "deDE": "[ms]Erfahrener[fs]Erfahrene[ns]Erfahrenes[p]Erfahrene[c]Erfahrenen-",
       "esES": "de veteranía en liza",
-      "esMX": "del Combatiente Veterano",
+      "esMX": "de Combatiente Veterano",
       "frFR": "de vétéran du combat",
       "itIT": "del Rissoso Veterano",
       "jaJP": "熟練の格闘家の",
@@ -1473,9 +1473,9 @@
       "plPL": "Co 25.0 sek. Wypiętrzenie gwarantuje przytłoczenie wroga i obrażenia zwiększone o x{10/20}%. Ten czas jest skracany o 4.0 sek., kiedy Wypiętrzenie przytłacza bossa lub elitarnego wroga.",
       "ptBR": "A cada 25.0 s, Revolta é sempre um Golpe Brutal e causa x{10/20}% de dano adicional. O temporizador é reduzido em 4.0 s quando Revolta desfere um Golpe Brutal em um chefe ou inimigo de elite.",
       "ruRU": "Раз в 25.0 сек. \"Выброс земли\" гарантированно наносит подавляющий урон, увеличенный на x{10/20}%. Время восстановления сокращается на 4.0 сек., если \"Выброс земли\" наносит подавляющий урон боссу или особому противнику.",
-      "trTR": "Ayaklanma her 25.0 saniyede bir kez kesin olarak Aşırı Güçlenir ve x{10/20}% artırılmış hasar verir. Ayaklanma, bir Patrona veya Seçkin bir düşmana karşı Aşırı Güçlenirse süre 4.0 saniye kısalır.",
+      "trTR": "Ayaklanma her 25.0 saniyede bir kez kesin olarak Aşırı Güçlenir ve x{10/20}% artırılmış hasar verir. Ayaklanma, bir Patrona veya Seçkin bir düşmana karşı Aşırı Güçlenirse bu süre 4.0 saniye kısalır.",
       "zhCN": "每隔 25.0 秒,扬石飞沙必定造成压制,并且伤害提高 x{10/20}%。当扬石飞沙对首领或精英敌人造成压制时,该效果的触发间隔缩短 4.0 秒。",
-      "zhTW": "每經過 25.0 秒,動盪震擊必定會造成壓制且造成的傷害提高 x{10/20}%。當動盪震擊對首領或精英怪造成壓制時,此計時器縮短 4.0 秒。",
+      "zhTW": "每經過 25.0 秒,動盪震擊必定會造成壓制且造成的傷害提高 x{10/20}%。當動盪震擊對首領或精英敵人造成壓制時,此計時器縮短 4.0 秒。",
       "enUS": "Every 25.0 seconds, Upheaval is guaranteed to Overpower and deals x{10/20}% increased damage. This timer is reduced by 4.0 seconds when Upheaval Overpowers a Boss or an Elite enemy."
     }
   },
@@ -2561,7 +2561,7 @@
       "esES": "[fs]vigorosa[ms]vigoroso[fp]vigorosas[mp]vigorosos",
       "esMX": "Vigoroso",
       "frFR": "[ms]vigoureux[fs]vigoureuse[mp]vigoureux[fp]vigoureuses",
-      "itIT": "del Vigore",
+      "itIT": "[fs]Vigorosa[ms]Vigoroso[fp]Vigorose[mp]Vigorosi",
       "jaJP": "頑健なる者の",
       "koKR": "원기",
       "plPL": "[ms]Energiczny[fs]Energiczna[ns]Energiczne[p]Energiczne",
@@ -3227,7 +3227,7 @@
       "esES": "de poderío",
       "esMX": "de Poder",
       "frFR": "de toute-puissance",
-      "itIT": "della Potenza",
+      "itIT": "della Possenza",
       "jaJP": "腕力の",
       "koKR": "위세의",
       "plPL": "Mocy",
@@ -3419,7 +3419,7 @@
       "ptBR": "[fs]Arrogante[ms]Arrogante[fp]Arrogantes[mp]Arrogantes",
       "ruRU": "[ms]высокомерный[fs]высокомерная[ns]высокомерное[p]высокомерные",
       "trTR": "[n1]Kibirli",
-      "zhCN": "骄狂",
+      "zhCN": "嚣狂",
       "zhTW": "自負",
       "enUS": "Conceited"
     },
@@ -3523,7 +3523,7 @@
       "esES": "de reprensión",
       "esMX": "de Retribución",
       "frFR": "de vindicte",
-      "itIT": "della Punizione",
+      "itIT": "del Castigo",
       "jaJP": "因果応報の",
       "koKR": "응보의",
       "plPL": "Pomsty",
@@ -4063,7 +4063,7 @@
       "plPL": "Obrażenia zadawane określonymi zbiorami typów obrażeń zwiększają się o x{20/30}% na 7.0 sek. Ten efekt obowiązuje na zmianę w 2 zbiorach:\n• Obrażenia od Ognia, Błyskawicy i obrażenia fizyczne.\n• Obrażenia od Zimna, Trucizny i Cienia.",
       "ptBR": "Você recebe x{20/30}% de dano adicional para um conjunto de tipos de dano por 7.0 s. Esse efeito se alterna entre 2 conjuntos:\n• Ígneo, elétrico e físico.\n• Gélido, venenoso e de sombra.",
       "ruRU": "Усиливает несколько видов урона на x{20/30}% на 7.0 сек. Поочередно выбирается один из двух наборов урона:\n• огонь, молния и физический.\n• холод, яд и темная магия.",
-      "trTR": "Bir hasar türü grubuna karşı 7.0 saniye boyunca x{20/30}% artırılmış hasar kazan. Bu etki 2 set arasında değişir:\n• Ateş, Yıldırım ve Fiziksel.\n• Soğuk, Zehir ve Gölge.",
+      "trTR": "Bir hasar türü grubuna 7.0 saniye boyunca x{20/30}% artırılmış hasar kazan. Bu etki 2 set arasında değişir:\n• Ateş, Yıldırım ve Fiziksel.\n• Soğuk, Zehir ve Gölge.",
       "zhCN": "获得对一组伤害类型 x{20/30}% 的伤害提升,持续 7.0 秒。该效果会在 2 组伤害类型之间交替:\n• 火焰、闪电和物理。\n• 冰霜、毒素和暗影。",
       "zhTW": "使其中一組屬性的傷害提高 x{20/30}%,持續 7.0 秒。此效果會在 2 組屬性之間切換:\n• 火焰、閃電和物理。\n• 冰寒、毒素和暗影。",
       "enUS": "Gain x{20/30}% increased damage to a set of damage types for 7.0 seconds. This effect alternates between 2 sets:\n• Fire, Lightning, and Physical.\n• Cold, Poison, and Shadow."
@@ -4515,7 +4515,7 @@
   },
   "Coldbringer's": {
     "category": "Utility",
-    "in_codex": true,
+    "in_codex": false,
     "class": "Necromancer",
     "name_localized": {
       "deDE": "[ms]Kältebringender[fs]Kältebringende[ns]Kältebringendes[p]Kältebringende[c]Kältebringer-",
@@ -6347,7 +6347,7 @@
       "enUS": "Icy Alchemist's"
     },
     "desc_localized": {
-      "deDE": "Glückstreffer: Fertigkeiten mit Schatteninfusion haben eine Chance von bis zu 75.0%, eine Explosion zu erzeugen, die dem Ziel und Gegnern in der Nähe {#} Kälteschaden zufügt und sie 25.0% lang unterkühlt. Waren diese Gegner bereits zuvor unterkühlt oder eingefroren, erhöht sich dieser Schaden um x100.0%.",
+      "deDE": "Glückstreffer: Fertigkeiten mit Schatteninfusion haben eine Chance von bis zu 75.0%, eine Explosion zu erzeugen, die dem Ziel und Gegnern in der Nähe {#} Kälteschaden zufügt und sie für 25.0% unterkühlt. Waren diese Gegner bereits zuvor unterkühlt oder eingefroren, erhöht sich dieser Schaden um x100.0%.",
       "esES": "Golpe de suerte: Las habilidades imbuidas de sombra tienen hasta un 75.0% de probabilidad de provocar una explosión tóxica que inflige {#} de daño de frío al objetivo y a los enemigos cercanos, y los hiela un 25.0%. Si ya estaban helados o congelados, este daño aumenta un x100.0%.",
       "esMX": "Golpe afortunado: Las habilidades de Imbuición Umbría tienen hasta un 75.0% de probabilidad de liberar una explosión que inflige {#} de daño de frío al objetivo y a los enemigos circundantes, lo que los hiela por un 25.0%. Si ya estaban helados o congelados, aumenta ese daño un x100.0%.",
       "frFR": "Coup de chance: les compétences imprégnées d'ombre ont jusqu'à 75.0% de chances de déclencher une explosion infligeant {#}points de dégâts de froid à la cible ainsi qu'aux adversaires à proximité, ce qui les glace à hauteur de 25.0%. Si les cibles étaient déjà glacées ou gelées, ces dégâts augmentent de x100.0%.",
@@ -7297,7 +7297,7 @@
       "esES": "de hipotermia",
       "esMX": "Congelado",
       "frFR": "d'engelure",
-      "itIT": "Mordigelo",
+      "itIT": "dell'Ipotermia",
       "jaJP": "氷撃の",
       "koKR": "동상에 걸린",
       "plPL": "[ms]Zmrożony[fs]Zmrożona[ns]Zmrożone[p]Zmrożone",
@@ -7432,7 +7432,7 @@
       "ruRU": "Лишаясь \"Маскировки\", вы получаете +10.0% к сопротивлению и максимальному сопротивлению всем стихиям на 4.0 сек.\n\nПосле убийства особого противника время восстановления \"Маскировки\" сокращается на {6/10} сек.",
       "trTR": "Gizlenmeyi bozmak 4.0 saniye boyunca Tüm Elementlere Direnci ve Maksimum Direnci +10.0% artırır.\n\nSeçkin düşman öldürmek, Gizlenme yeteneğinin Bekleme Süresini {6/10} saniye azaltır.",
       "zhCN": "打破隐蔽状态会获得+10.0% 全元素抗性和抗性上限,持续 4.0 秒。\n\n消灭一个精英敌人可使隐蔽的冷却时间缩短 {6/10} 秒。",
-      "zhTW": "脫離隱匿會獲得 +10.0% 抗性和全元素抗性上限,持續 4.0 秒。\n\n擊殺精英怪敵人會縮短隱匿的冷卻時間 {6/10} 秒。",
+      "zhTW": "脫離隱匿會獲得 +10.0% 抗性和全元素抗性上限,持續 4.0 秒。\n\n擊殺精英敵人會縮短隱匿的冷卻時間 {6/10} 秒。",
       "enUS": "Breaking Concealment grants +10.0% Resistance and Maximum Resistance to All Elements for 4.0 seconds.\n\nKilling an Elite enemy reduces Concealment's Cooldown by {6/10} seconds."
     }
   },
@@ -7518,7 +7518,7 @@
       "deDE": "[ms]Zerschmetterter[fs]Zerschmetterte[ns]Zerschmettertes[p]Zerschmetterte[c]Zerschmetterungs-",
       "esES": "[fs]destrozada[ms]destrozado[fp]destrozadas[mp]destrozados",
       "esMX": "Destruido",
-      "frFR": "[ms]fracassant[fs]fracassante[mp]fracassants[fp]fracassantes",
+      "frFR": "[ms]fracassé[fs]fracassée[mp]fracassés[fp]fracassées",
       "itIT": "[fs]Infranta[ms]Infranto[fp]Infrante[mp]Infranti",
       "jaJP": "砕かれし",
       "koKR": "산산조각 난",
@@ -8813,7 +8813,7 @@
       "enUS": "Prodigy's"
     },
     "desc_localized": {
-      "deDE": "Die Verwendung einer Fertigkeit mit Abklingzeit stellt {15/25} Mana wieder her.",
+      "deDE": "Bei der Nutzung einer Fertigkeit mit Abklingzeit stellt {15/25} Mana wieder her.",
       "esES": "Usar un tiempo de reutilización restaura {15/25} de maná.",
       "esMX": "Usar una habilidad con recuperación restaura {15/25} de maná.",
       "frFR": "Utiliser une compétence avec temps de recharge vous rend {15/25} points de mana.",
@@ -8934,7 +8934,7 @@
       "plPL": "Twoja regeneracja many jest zwiększona o x{40/50}%, jeśli twoja postać nie odniosła obrażeń w ciągu ostatnich 2.0 sek.",
       "ptBR": "Sua regeneração de mana é aumentada em x{40/50}% se você não recebeu dano nos últimos 2.0 s.",
       "ruRU": "Скорость восстановления маны повышается на x{40/50}%, если вы не получали урон за предыдущие 2.0 сек.",
-      "trTR": "Son 2.0] saniye içinde hasar almadıysan Mana Yenilemesi oranın x{40/50}% artar.",
+      "trTR": "Son 2.0 saniye içinde hasar almadıysan Mana Yenilemesi oranın x{40/50}% artar.",
       "zhCN": "你在 2.0 秒内未受到伤害, 你的法力回复速度提高 x{40/50}%。",
       "zhTW": "若 2.0 秒內沒有受到傷害,法力恢復提高 x{40/50}%。",
       "enUS": "Your Mana Regeneration is increased by x{40/50}% if you have not taken damage in the last 2.0 seconds."
@@ -9119,7 +9119,7 @@
       "plPL": "Szczęśliwy traf: Kiedy twoje umiejętności Przywoływania trafiają w cel, masz {30/40}% szans na zyskanie +1.0 do rangi umiejętności Przywoływania przez 12.0 sek. Efekt ten może kumulować się maksymalnie 3.0 razy.",
       "ptBR": "Golpe de Sorte: Quando suas habilidades de Conjuração acertarem, você tem até {30/40}% de chance de ganhar +1.0 ranques das suas habilidades de Conjuração por 12.0 s. Pode acumular até 3.0 vezes.",
       "ruRU": "Удачный удар: попадания умений категории \"Колдовство\" с вероятностью до {30/40}% повышают уровень умений этой категории на 1.0 на 12.0 сек. Эффект суммируется до 3.0 раз.",
-      "trTR": "Şanslı Vuruş: Çağrı Yeteneklerin isabet ettiğinde 12.0 saniyeliğine en fazla {30/40}% ihtimalle +1.0 Kademe kazanırsın. En fazla 3.0 kez birikebilir.",
+      "trTR": "Şanslı Vuruş: Çağrı Yeteneklerin isabet ettiğinde 12.0 saniyeliğine en fazla {30/40}% ihtimalle Çağrı Yeteneklerine +1.0 Kademe kazanırsın. En fazla 3.0 kez birikebilir.",
       "zhCN": "幸运一击:当你的召法技能命中时, 你有至多 {30/40}% 几率使你的召法技能获得 +1.0 级别, 持续 12.0 秒。该效果至多叠加 3.0 次。",
       "zhTW": "幸運觸發:當你的咒喚技能命中時,你的咒喚技能等級最多有 {30/40}% 的機率 +1.0,持續 12.0 秒。最多可以堆疊 3.0 次。",
       "enUS": "Lucky Hit: When your Conjuration Skills hit you have up to a {30/40}% chance to gain +1.0 Rank to your Conjuration skills for 12.0 seconds. This can stack up to 3.0 times."
